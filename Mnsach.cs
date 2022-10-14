@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QLTV
 {
-    public partial class Form1 : Form
+    public partial class Mnsach : Form
     {
-        public Form1()
+        public Mnsach()
         {
             InitializeComponent();
         }
