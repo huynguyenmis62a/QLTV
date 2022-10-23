@@ -1,7 +1,7 @@
 ﻿
 namespace QLTV
 {
-    partial class Form1
+    partial class FrmQLtra
     {
         /// <summary>
         /// Required designer variable.
@@ -201,7 +201,8 @@ namespace QLTV
             this.Controls.Add(this.button7);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "FrmQltra";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);

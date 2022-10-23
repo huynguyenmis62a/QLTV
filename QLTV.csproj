@@ -70,6 +70,12 @@
     <Compile Include="FrmQLtra.Designer.cs">
       <DependentUpon>FrmQLtra.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frmqltv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmqltv.Designer.cs">
+      <DependentUpon>Frmqltv.cs</DependentUpon>
+    </Compile>
     <Compile Include="QLdocgia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmQLtra.resx">
       <DependentUpon>FrmQLtra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmqltv.resx">
+      <DependentUpon>Frmqltv.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mnsach.resx">
       <DependentUpon>Mnsach.cs</DependentUpon>
