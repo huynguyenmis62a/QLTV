@@ -56,10 +56,12 @@
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.grdData = new System.Windows.Forms.DataGridView();
+            this.MaDG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button7 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdData)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -326,29 +328,51 @@
             this.comboBox3.Size = new System.Drawing.Size(246, 21);
             this.comboBox3.TabIndex = 4;
             // 
-            // dataGridView1
+            // grdData
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(185, 340);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(638, 76);
-            this.dataGridView1.TabIndex = 13;
+            this.grdData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaDG});
+            this.grdData.Location = new System.Drawing.Point(12, 317);
+            this.grdData.Name = "grdData";
+            this.grdData.Size = new System.Drawing.Size(753, 76);
+            this.grdData.TabIndex = 13;
+            this.grdData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // MaDG
+            // 
+            this.MaDG.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.MaDG.DataPropertyName = "MaDG";
+            this.MaDG.HeaderText = "Mã độc giả";
+            this.MaDG.Name = "MaDG";
+            this.MaDG.Width = 86;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(109, 415);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(98, 23);
+            this.button7.TabIndex = 14;
+            this.button7.Text = "Thêm";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Mnsach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(906, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.grdData);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Mnsach";
-            this.Text = "Form1";
+            this.Text = "Mượn sách";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdData)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -382,7 +406,9 @@
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView grdData;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaDG;
+        private System.Windows.Forms.Button button7;
     }
 }
 
