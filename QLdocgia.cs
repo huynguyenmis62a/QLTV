@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace QLTV
 {
-    public partial class Trasach : Form
+    public partial class QLdocgia : Form
     {
-        public Trasach()
+        public QLdocgia()
         {
             InitializeComponent();
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
         }
     }
 }

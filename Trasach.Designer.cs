@@ -238,6 +238,7 @@
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin mượn";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // button3
             // 

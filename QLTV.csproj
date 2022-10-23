@@ -58,6 +58,12 @@
     <Compile Include="DoiMK.Designer.cs">
       <DependentUpon>DoiMK.cs</DependentUpon>
     </Compile>
+    <Compile Include="QLdocgia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLdocgia.Designer.cs">
+      <DependentUpon>QLdocgia.cs</DependentUpon>
+    </Compile>
     <Compile Include="QLTVDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -105,6 +111,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="QLdocgia.resx">
+      <DependentUpon>QLdocgia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Trasach.resx">
       <DependentUpon>Trasach.cs</DependentUpon>
     </EmbeddedResource>
