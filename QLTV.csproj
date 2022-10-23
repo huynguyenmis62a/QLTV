@@ -64,6 +64,18 @@
     <Compile Include="QLdocgia.Designer.cs">
       <DependentUpon>QLdocgia.cs</DependentUpon>
     </Compile>
+    <Compile Include="QLmuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLmuon.Designer.cs">
+      <DependentUpon>QLmuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLsach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLsach.Designer.cs">
+      <DependentUpon>QLsach.cs</DependentUpon>
+    </Compile>
     <Compile Include="QLTVDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -113,6 +125,12 @@
     </Compile>
     <EmbeddedResource Include="QLdocgia.resx">
       <DependentUpon>QLdocgia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLmuon.resx">
+      <DependentUpon>QLmuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLsach.resx">
+      <DependentUpon>QLsach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Trasach.resx">
       <DependentUpon>Trasach.cs</DependentUpon>
