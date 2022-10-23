@@ -57,8 +57,15 @@
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.grdData = new System.Windows.Forms.DataGridView();
-            this.MaDG = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button7 = new System.Windows.Forms.Button();
+            this.MaDG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenDG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Masach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tensach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Maloaisach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Soluongmuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ngaymuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Hantra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdData)).BeginInit();
@@ -332,20 +339,19 @@
             // 
             this.grdData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaDG});
+            this.MaDG,
+            this.TenDG,
+            this.Masach,
+            this.Tensach,
+            this.Maloaisach,
+            this.Soluongmuon,
+            this.Ngaymuon,
+            this.Hantra});
             this.grdData.Location = new System.Drawing.Point(12, 317);
             this.grdData.Name = "grdData";
             this.grdData.Size = new System.Drawing.Size(753, 76);
             this.grdData.TabIndex = 13;
             this.grdData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // MaDG
-            // 
-            this.MaDG.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.MaDG.DataPropertyName = "MaDG";
-            this.MaDG.HeaderText = "Mã độc giả";
-            this.MaDG.Name = "MaDG";
-            this.MaDG.Width = 86;
             // 
             // button7
             // 
@@ -356,6 +362,55 @@
             this.button7.Text = "Thêm";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // MaDG
+            // 
+            this.MaDG.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.MaDG.DataPropertyName = "MaDG";
+            this.MaDG.HeaderText = "Mã độc giả";
+            this.MaDG.Name = "MaDG";
+            this.MaDG.Width = 86;
+            // 
+            // TenDG
+            // 
+            this.TenDG.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.TenDG.DataPropertyName = "TenDG";
+            this.TenDG.HeaderText = "Tên độc giả";
+            this.TenDG.Name = "TenDG";
+            this.TenDG.Width = 90;
+            // 
+            // Masach
+            // 
+            this.Masach.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Masach.DataPropertyName = "Masach";
+            this.Masach.HeaderText = "Mã sách";
+            this.Masach.Name = "Masach";
+            this.Masach.Width = 73;
+            // 
+            // Tensach
+            // 
+            this.Tensach.HeaderText = "Tên sách";
+            this.Tensach.Name = "Tensach";
+            // 
+            // Maloaisach
+            // 
+            this.Maloaisach.HeaderText = "Mã loại sách";
+            this.Maloaisach.Name = "Maloaisach";
+            // 
+            // Soluongmuon
+            // 
+            this.Soluongmuon.HeaderText = "Số lượng mượn";
+            this.Soluongmuon.Name = "Soluongmuon";
+            // 
+            // Ngaymuon
+            // 
+            this.Ngaymuon.HeaderText = "Ngày mượn";
+            this.Ngaymuon.Name = "Ngaymuon";
+            // 
+            // Hantra
+            // 
+            this.Hantra.HeaderText = "Hạn trả";
+            this.Hantra.Name = "Hantra";
             // 
             // Mnsach
             // 
@@ -407,8 +462,15 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.DataGridView grdData;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaDG;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaDG;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenDG;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Masach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tensach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Maloaisach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Soluongmuon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ngaymuon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Hantra;
     }
 }
 
