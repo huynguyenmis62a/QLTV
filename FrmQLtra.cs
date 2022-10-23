@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace QLTV
 {
-    public partial class FrmQLtra : Form
+    public partial class FrmQLtra: Form
     {
         public FrmQLtra()
         {
             InitializeComponent();
-        }
-
-        private void FrmQLtra_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
