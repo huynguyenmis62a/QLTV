@@ -57,6 +57,15 @@
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.MaDG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenDG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Masach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tensach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Maloaisach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Soluongmuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ngaymuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Hantra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button7 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -65,9 +74,18 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(50, 292);
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaDG,
+            this.TenDG,
+            this.Masach,
+            this.Tensach,
+            this.Maloaisach,
+            this.Soluongmuon,
+            this.Ngaymuon,
+            this.Hantra});
+            this.dataGridView1.Location = new System.Drawing.Point(27, 292);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(733, 128);
+            this.dataGridView1.Size = new System.Drawing.Size(733, 116);
             this.dataGridView1.TabIndex = 16;
             // 
             // groupBox2
@@ -335,11 +353,85 @@
             this.comboBox3.Size = new System.Drawing.Size(246, 21);
             this.comboBox3.TabIndex = 4;
             // 
+            // MaDG
+            // 
+            this.MaDG.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.MaDG.DataPropertyName = "MaDG";
+            this.MaDG.HeaderText = "Mã độc giả";
+            this.MaDG.Name = "MaDG";
+            this.MaDG.Width = 86;
+            // 
+            // TenDG
+            // 
+            this.TenDG.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.TenDG.DataPropertyName = "TenDG";
+            this.TenDG.HeaderText = "Tên độc giả";
+            this.TenDG.Name = "TenDG";
+            this.TenDG.Width = 90;
+            // 
+            // Masach
+            // 
+            this.Masach.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Masach.DataPropertyName = "Masach";
+            this.Masach.HeaderText = "Mã sách";
+            this.Masach.Name = "Masach";
+            this.Masach.Width = 73;
+            // 
+            // Tensach
+            // 
+            this.Tensach.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Tensach.DataPropertyName = "Tensach";
+            this.Tensach.HeaderText = "Tên sách";
+            this.Tensach.Name = "Tensach";
+            this.Tensach.Width = 77;
+            // 
+            // Maloaisach
+            // 
+            this.Maloaisach.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Maloaisach.DataPropertyName = "Maloaisach";
+            this.Maloaisach.HeaderText = "Mã loại sách";
+            this.Maloaisach.Name = "Maloaisach";
+            this.Maloaisach.Width = 92;
+            // 
+            // Soluongmuon
+            // 
+            this.Soluongmuon.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Soluongmuon.DataPropertyName = "Soluongmuon";
+            this.Soluongmuon.HeaderText = "Số lượng mượn";
+            this.Soluongmuon.Name = "Soluongmuon";
+            this.Soluongmuon.Width = 95;
+            // 
+            // Ngaymuon
+            // 
+            this.Ngaymuon.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Ngaymuon.DataPropertyName = "Ngaymuon";
+            this.Ngaymuon.HeaderText = "Ngày mượn";
+            this.Ngaymuon.Name = "Ngaymuon";
+            this.Ngaymuon.Width = 79;
+            // 
+            // Hantra
+            // 
+            this.Hantra.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Hantra.DataPropertyName = "Hantra";
+            this.Hantra.HeaderText = "Hạn trả";
+            this.Hantra.Name = "Hantra";
+            this.Hantra.Width = 62;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(361, 415);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 17;
+            this.button7.Text = "Trả";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
             // Trasach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(876, 450);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -385,5 +477,14 @@
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaDG;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenDG;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Masach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tensach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Maloaisach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Soluongmuon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ngaymuon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Hantra;
+        private System.Windows.Forms.Button button7;
     }
 }
