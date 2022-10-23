@@ -57,8 +57,6 @@
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -223,8 +221,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button8);
-            this.groupBox1.Controls.Add(this.button7);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.textBox1);
@@ -339,26 +335,6 @@
             this.comboBox3.Size = new System.Drawing.Size(246, 21);
             this.comboBox3.TabIndex = 4;
             // 
-            // button7
-            // 
-            this.button7.ForeColor = System.Drawing.Color.Red;
-            this.button7.Location = new System.Drawing.Point(167, 87);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(78, 25);
-            this.button7.TabIndex = 14;
-            this.button7.Text = "Hủy";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.ForeColor = System.Drawing.Color.Red;
-            this.button8.Location = new System.Drawing.Point(85, 148);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(78, 25);
-            this.button8.TabIndex = 14;
-            this.button8.Text = "Hủy";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
             // Trasach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -409,7 +385,5 @@
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
     }
 }
