@@ -64,17 +64,17 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmQLtra.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmQLtra.Designer.cs">
-      <DependentUpon>FrmQLtra.cs</DependentUpon>
-    </Compile>
     <Compile Include="Frmqltv.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frmqltv.Designer.cs">
       <DependentUpon>Frmqltv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Muonsach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Muonsach.Designer.cs">
+      <DependentUpon>Muonsach.cs</DependentUpon>
     </Compile>
     <Compile Include="QLdocgia.cs">
       <SubType>Form</SubType>
@@ -105,11 +105,11 @@
     <Compile Include="Trasach.Designer.cs">
       <DependentUpon>Trasach.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mnsach.cs">
+    <Compile Include="Luutrusach.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Mnsach.Designer.cs">
-      <DependentUpon>Mnsach.cs</DependentUpon>
+    <Compile Include="Luutrusach.Designer.cs">
+      <DependentUpon>Luutrusach.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -128,17 +128,17 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmQLtra.resx">
-      <DependentUpon>FrmQLtra.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Frmqltv.resx">
       <DependentUpon>Frmqltv.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Mnsach.resx">
-      <DependentUpon>Mnsach.cs</DependentUpon>
+    <EmbeddedResource Include="Luutrusach.resx">
+      <DependentUpon>Luutrusach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Muonsach.resx">
+      <DependentUpon>Muonsach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -39,7 +39,7 @@ namespace QLTV
 
         private void mượnSáchToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Mnsach f = new Mnsach();
+            Muonsach f = new Muonsach();
             f.Show(); 
         }
 
