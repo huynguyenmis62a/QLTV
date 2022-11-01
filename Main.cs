@@ -62,5 +62,11 @@ namespace QLTV
             f.Show();
 
         }
+
+        private void danhMụcSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmQLsach f = new FrmQLsach();
+            f.Show();
+        }
     }
 }

@@ -127,7 +127,7 @@ namespace QLTV
 
         private void Muonsach_Load(object sender, EventArgs e)
         {
-            constr = @"Data Source=ADMIN\PKH;Initial Catalog=PTUD;Integrated Security=True";
+            constr = "Data Source=21AK22-COM\\LINH;Initial Catalog=QLTV;Integrated Security=True";
             conn.ConnectionString = constr;
             conn.Open();
             //sql = "SELECT masach,TenSach,TacGia,SoLuong,NXB,TheLoai,NamXuatBan FROM TableSach";
