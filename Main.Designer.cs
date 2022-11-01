@@ -306,6 +306,7 @@ namespace QLTV
             this.quảnLýNhânViênToolStripMenuItem.Name = "quảnLýNhânViênToolStripMenuItem";
             this.quảnLýNhânViênToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.quảnLýNhânViênToolStripMenuItem.Text = "1. Quản lý độc giả";
+            this.quảnLýNhânViênToolStripMenuItem.Click += new System.EventHandler(this.quảnLýNhânViênToolStripMenuItem_Click);
             // 
             // toolStripSeparator11
             // 
