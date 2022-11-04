@@ -102,7 +102,7 @@ namespace QLTV
             this.grdData1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grdData1.Location = new System.Drawing.Point(3, 16);
             this.grdData1.Name = "grdData1";
-            this.grdData1.Size = new System.Drawing.Size(728, 366);
+            this.grdData1.Size = new System.Drawing.Size(702, 316);
             this.grdData1.TabIndex = 17;
             this.grdData1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdData1_CellContentClick);
             // 
@@ -200,14 +200,14 @@ namespace QLTV
             // 
             this.txtSoLuong.Location = new System.Drawing.Point(128, 212);
             this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Size = new System.Drawing.Size(271, 25);
+            this.txtSoLuong.Size = new System.Drawing.Size(223, 25);
             this.txtSoLuong.TabIndex = 37;
             // 
             // txtNamXuatBan
             // 
             this.txtNamXuatBan.Location = new System.Drawing.Point(128, 178);
             this.txtNamXuatBan.Name = "txtNamXuatBan";
-            this.txtNamXuatBan.Size = new System.Drawing.Size(271, 25);
+            this.txtNamXuatBan.Size = new System.Drawing.Size(223, 25);
             this.txtNamXuatBan.TabIndex = 36;
             // 
             // label11
@@ -223,14 +223,14 @@ namespace QLTV
             // 
             this.txtNXB.Location = new System.Drawing.Point(128, 143);
             this.txtNXB.Name = "txtNXB";
-            this.txtNXB.Size = new System.Drawing.Size(271, 25);
+            this.txtNXB.Size = new System.Drawing.Size(223, 25);
             this.txtNXB.TabIndex = 35;
             // 
             // txtTenSach
             // 
             this.txtTenSach.Location = new System.Drawing.Point(128, 53);
             this.txtTenSach.Name = "txtTenSach";
-            this.txtTenSach.Size = new System.Drawing.Size(271, 25);
+            this.txtTenSach.Size = new System.Drawing.Size(223, 25);
             this.txtTenSach.TabIndex = 34;
             // 
             // label3
@@ -255,9 +255,9 @@ namespace QLTV
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(774, 37);
+            this.groupBox1.Location = new System.Drawing.Point(736, 49);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(400, 220);
+            this.groupBox1.Size = new System.Drawing.Size(373, 208);
             this.groupBox1.TabIndex = 38;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin mượn";
@@ -340,28 +340,28 @@ namespace QLTV
             this.txtTheloaisach.FormattingEnabled = true;
             this.txtTheloaisach.Location = new System.Drawing.Point(128, 21);
             this.txtTheloaisach.Name = "txtTheloaisach";
-            this.txtTheloaisach.Size = new System.Drawing.Size(271, 25);
+            this.txtTheloaisach.Size = new System.Drawing.Size(223, 25);
             this.txtTheloaisach.TabIndex = 42;
             // 
             // txtmasach
             // 
             this.txtmasach.Location = new System.Drawing.Point(128, 83);
             this.txtmasach.Name = "txtmasach";
-            this.txtmasach.Size = new System.Drawing.Size(271, 25);
+            this.txtmasach.Size = new System.Drawing.Size(223, 25);
             this.txtmasach.TabIndex = 33;
             // 
             // txtTacGia
             // 
             this.txtTacGia.Location = new System.Drawing.Point(128, 113);
             this.txtTacGia.Name = "txtTacGia";
-            this.txtTacGia.Size = new System.Drawing.Size(271, 25);
+            this.txtTacGia.Size = new System.Drawing.Size(223, 25);
             this.txtTacGia.TabIndex = 40;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(570, 17);
+            this.label17.Location = new System.Drawing.Point(580, 24);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(140, 24);
             this.label17.TabIndex = 0;
@@ -386,7 +386,7 @@ namespace QLTV
             this.groupBox4.Controls.Add(this.comGiaTri);
             this.groupBox4.Controls.Add(this.comTenTruong);
             this.groupBox4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(0, 36);
+            this.groupBox4.Location = new System.Drawing.Point(25, 70);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(334, 122);
             this.groupBox4.TabIndex = 42;
@@ -475,9 +475,9 @@ namespace QLTV
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.grdData1);
-            this.groupBox2.Location = new System.Drawing.Point(-3, 179);
+            this.groupBox2.Location = new System.Drawing.Point(7, 217);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(734, 385);
+            this.groupBox2.Size = new System.Drawing.Size(708, 335);
             this.groupBox2.TabIndex = 37;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh sách các phiếu mượn";
@@ -486,9 +486,9 @@ namespace QLTV
             // 
             this.groupBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.groupBox5.Controls.Add(this.label17);
-            this.groupBox5.Location = new System.Drawing.Point(-86, -25);
+            this.groupBox5.Location = new System.Drawing.Point(-86, -7);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(1302, 48);
+            this.groupBox5.Size = new System.Drawing.Size(1302, 56);
             this.groupBox5.TabIndex = 43;
             this.groupBox5.TabStop = false;
             // 
@@ -539,9 +539,9 @@ namespace QLTV
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(774, 296);
+            this.groupBox3.Location = new System.Drawing.Point(736, 311);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(406, 256);
+            this.groupBox3.Size = new System.Drawing.Size(373, 256);
             this.groupBox3.TabIndex = 39;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông tin sách";
@@ -586,7 +586,7 @@ namespace QLTV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1131, 538);
+            this.ClientSize = new System.Drawing.Size(1122, 579);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
