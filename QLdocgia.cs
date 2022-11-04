@@ -184,7 +184,7 @@ namespace QLTV
         private void btnDelete_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn có chắc chắn muốn xóa bản ghi hiện thời?Y/N", "Xác nhận" +
-             "yêu cầu", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes) ;
+             "yêu cầu", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
                 sql = "Delete from TableDocGia wheremadocgia='" + txtmadocgia.Text + "'";
                 cmd.Connection = conn;
