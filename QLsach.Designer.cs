@@ -30,7 +30,6 @@ namespace QLTV
         private void InitializeComponent()
         {
             this.btnEnd = new System.Windows.Forms.Button();
-            this.btnPrint = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
@@ -72,15 +71,6 @@ namespace QLTV
             this.btnEnd.Text = "Kết thúc";
             this.btnEnd.UseVisualStyleBackColor = true;
             this.btnEnd.Click += new System.EventHandler(this.btnEnd_Click);
-            // 
-            // btnPrint
-            // 
-            this.btnPrint.Location = new System.Drawing.Point(640, 457);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(137, 22);
-            this.btnPrint.TabIndex = 62;
-            this.btnPrint.Text = "In báo cáo theo Mã sách";
-            this.btnPrint.UseVisualStyleBackColor = true;
             // 
             // btnUpdate
             // 
@@ -362,7 +352,6 @@ namespace QLTV
             this.ClientSize = new System.Drawing.Size(887, 486);
             this.Controls.Add(this.btnClearFilter);
             this.Controls.Add(this.btnEnd);
-            this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
@@ -403,7 +392,6 @@ namespace QLTV
         #endregion
 
         private System.Windows.Forms.Button btnEnd;
-        private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnEdit;
