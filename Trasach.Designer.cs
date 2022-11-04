@@ -262,7 +262,7 @@
             this.groupBox5.Controls.Add(this.label17);
             this.groupBox5.Location = new System.Drawing.Point(2, 3);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(1126, 49);
+            this.groupBox5.Size = new System.Drawing.Size(1147, 49);
             this.groupBox5.TabIndex = 37;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "groupBox5";

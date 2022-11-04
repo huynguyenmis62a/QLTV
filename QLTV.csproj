@@ -99,6 +99,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLTVDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="TimDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimDocGia.Designer.cs">
+      <DependentUpon>TimDocGia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Trasach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QLsach.resx">
       <DependentUpon>QLsach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimDocGia.resx">
+      <DependentUpon>TimDocGia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Trasach.resx">
       <DependentUpon>Trasach.cs</DependentUpon>
