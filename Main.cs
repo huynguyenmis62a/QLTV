@@ -74,5 +74,11 @@ namespace QLTV
             QLdocgia f = new QLdocgia();
             f.Show();
         }
+
+        private void tìmKiếmĐộcGiảToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TimDocGia f = new TimDocGia();
+            f.Show();
+        }
     }
 }

@@ -20,7 +20,7 @@ namespace QLTV
         //DataTable dt1 = new DataTable();
         DataTable Com2dt = new DataTable();
         DataTable comdt = new DataTable();
-        String sql, constr, sql1;
+        String sql, constr;
         int i;
         
         //Boolean addnewflag = false;

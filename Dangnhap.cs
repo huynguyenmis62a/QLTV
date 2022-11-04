@@ -48,31 +48,45 @@ namespace QLTV
             UserName = txtuser.Text;
             cmd.Connection = conn;
             int code = Convert.ToInt32(kq);
+         
             if (code == 0)
             {
                 MessageBox.Show("Chào mừng User đăng nhập", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                Main f = new Main();
+                f.Show();
             }
             else if (code == 1)
             {
                 MessageBox.Show("Chào mừng Admin đăng nhập", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                Main f = new Main();
+                f.Show();
             }
-            else if (code == 2)
+
+            else
+            
+             if (code == 2)
             {
                 MessageBox.Show("Tài khoản hoặc mật khẩu không đúng !!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtpass.Text = "";
                 txtuser.Text = "";
                 txtuser.Focus();
+                     
+                 MessageBox.Show(" Bạn đã đăng nhập sai quá 3 lần! Chương trình kết thúc");
+                 Application.Exit();
+                    
             }
-            else
+            
+            else 
             {
+                
                 MessageBox.Show("Tài khoản không tồn tại !!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtpass.Text = "";
                 txtuser.Text = "";
                 txtuser.Focus();
+
+
             }
-            conn.Close();
+         conn.Close();
             }
           
         

@@ -32,13 +32,9 @@ namespace QLTV
             this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.hệThốngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.đăngNhậpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.đổiMậtKhẩuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator16 = new System.Windows.Forms.ToolStripSeparator();
-            this.saoLưuVaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chứcNăngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mượnSáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
@@ -75,15 +71,19 @@ namespace QLTV
             this.hướngDẫnSửDụngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.đăngNhậpLạiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
             this.tìmKiếmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tìmKiếmĐộcGiảToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.đăngNhậpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.đổiMậtKhẩuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saoLưuVaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -119,51 +119,20 @@ namespace QLTV
             this.hệThốngToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.hệThốngToolStripMenuItem.Text = "&Hệ thống";
             // 
-            // đăngNhậpToolStripMenuItem
-            // 
-            this.đăngNhậpToolStripMenuItem.Image = global::QLTV.Properties.Resources.login;
-            this.đăngNhậpToolStripMenuItem.Name = "đăngNhậpToolStripMenuItem";
-            this.đăngNhậpToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
-            this.đăngNhậpToolStripMenuItem.Text = "1. Đăng nhập";
-            this.đăngNhậpToolStripMenuItem.Click += new System.EventHandler(this.đăngNhậpToolStripMenuItem_Click);
-            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(226, 6);
-            // 
-            // đổiMậtKhẩuToolStripMenuItem
-            // 
-            this.đổiMậtKhẩuToolStripMenuItem.Image = global::QLTV.Properties.Resources.password;
-            this.đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
-            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
-            this.đổiMậtKhẩuToolStripMenuItem.Text = "2. Đổi mật khẩu";
-            this.đổiMậtKhẩuToolStripMenuItem.Click += new System.EventHandler(this.đổiMậtKhẩuToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(226, 6);
             // 
-            // đăngXuấtToolStripMenuItem
-            // 
-            this.đăngXuấtToolStripMenuItem.Image = global::QLTV.Properties.Resources.logout;
-            this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
-            this.đăngXuấtToolStripMenuItem.Text = "3. Đăng xuất";
-            this.đăngXuấtToolStripMenuItem.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
-            // 
             // toolStripSeparator16
             // 
             this.toolStripSeparator16.Name = "toolStripSeparator16";
             this.toolStripSeparator16.Size = new System.Drawing.Size(226, 6);
-            // 
-            // saoLưuVaToolStripMenuItem
-            // 
-            this.saoLưuVaToolStripMenuItem.Image = global::QLTV.Properties.Resources.backup;
-            this.saoLưuVaToolStripMenuItem.Name = "saoLưuVaToolStripMenuItem";
-            this.saoLưuVaToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
-            this.saoLưuVaToolStripMenuItem.Text = "4. Sao lưu và phục hồi dữ liệu";
             // 
             // chứcNăngToolStripMenuItem
             // 
@@ -419,42 +388,10 @@ namespace QLTV
             this.toolStripSeparator13.Name = "toolStripSeparator13";
             this.toolStripSeparator13.Size = new System.Drawing.Size(6, 47);
             // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::QLTV.Properties.Resources.login;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(44, 44);
-            this.toolStripButton1.Text = "toolStripButton1";
-            this.toolStripButton1.ToolTipText = "Đăng nhập lại";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
-            // 
-            // toolStripButton2
-            // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = global::QLTV.Properties.Resources.backup;
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(44, 44);
-            this.toolStripButton2.Text = "toolStripButton2";
-            this.toolStripButton2.ToolTipText = "Làm mới";
-            // 
             // toolStripSeparator14
             // 
             this.toolStripSeparator14.Name = "toolStripSeparator14";
             this.toolStripSeparator14.Size = new System.Drawing.Size(6, 47);
-            // 
-            // toolStripButton3
-            // 
-            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton3.Image = global::QLTV.Properties.Resources.log_out;
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(44, 44);
-            this.toolStripButton3.Text = "toolStripButton3";
-            this.toolStripButton3.ToolTipText = "Đăng xuất";
-            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
             // contextMenuStrip1
             // 
@@ -488,6 +425,70 @@ namespace QLTV
             this.tìmKiếmĐộcGiảToolStripMenuItem.Name = "tìmKiếmĐộcGiảToolStripMenuItem";
             this.tìmKiếmĐộcGiảToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tìmKiếmĐộcGiảToolStripMenuItem.Text = "Tìm kiếm độc giả";
+            this.tìmKiếmĐộcGiảToolStripMenuItem.Click += new System.EventHandler(this.tìmKiếmĐộcGiảToolStripMenuItem_Click);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = global::QLTV.Properties.Resources.login;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(44, 44);
+            this.toolStripButton1.Text = "toolStripButton1";
+            this.toolStripButton1.ToolTipText = "Đăng nhập lại";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton2.Image = global::QLTV.Properties.Resources.backup;
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(44, 44);
+            this.toolStripButton2.Text = "toolStripButton2";
+            this.toolStripButton2.ToolTipText = "Làm mới";
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton3.Image = global::QLTV.Properties.Resources.log_out;
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(44, 44);
+            this.toolStripButton3.Text = "toolStripButton3";
+            this.toolStripButton3.ToolTipText = "Đăng xuất";
+            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
+            // 
+            // đăngNhậpToolStripMenuItem
+            // 
+            this.đăngNhậpToolStripMenuItem.Image = global::QLTV.Properties.Resources.login;
+            this.đăngNhậpToolStripMenuItem.Name = "đăngNhậpToolStripMenuItem";
+            this.đăngNhậpToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.đăngNhậpToolStripMenuItem.Text = "1. Đăng nhập";
+            this.đăngNhậpToolStripMenuItem.Click += new System.EventHandler(this.đăngNhậpToolStripMenuItem_Click);
+            // 
+            // đổiMậtKhẩuToolStripMenuItem
+            // 
+            this.đổiMậtKhẩuToolStripMenuItem.Image = global::QLTV.Properties.Resources.password;
+            this.đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
+            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.đổiMậtKhẩuToolStripMenuItem.Text = "2. Đổi mật khẩu";
+            this.đổiMậtKhẩuToolStripMenuItem.Click += new System.EventHandler(this.đổiMậtKhẩuToolStripMenuItem_Click);
+            // 
+            // đăngXuấtToolStripMenuItem
+            // 
+            this.đăngXuấtToolStripMenuItem.Image = global::QLTV.Properties.Resources.logout;
+            this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
+            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.đăngXuấtToolStripMenuItem.Text = "3. Đăng xuất";
+            this.đăngXuấtToolStripMenuItem.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
+            // 
+            // saoLưuVaToolStripMenuItem
+            // 
+            this.saoLưuVaToolStripMenuItem.Image = global::QLTV.Properties.Resources.backup;
+            this.saoLưuVaToolStripMenuItem.Name = "saoLưuVaToolStripMenuItem";
+            this.saoLưuVaToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.saoLưuVaToolStripMenuItem.Text = "4. Sao lưu và phục hồi dữ liệu";
             // 
             // Main
             // 
