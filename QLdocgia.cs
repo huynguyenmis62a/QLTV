@@ -200,6 +200,21 @@ namespace QLTV
             this.Close();
         }
 
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            RptQLDG rpt = new RptQLDG();
+            DataTable rptData = new DataTable();
+            sql = "Select madocgia, HoTen, DonViCongTac, NgayLapThe From TableDocGia where " +
+                " madocgia = '" + comTimkiem.Text + "'";
+            da = new SqlDataAdapter(sql, conn); 
+            da.Fill(rptData);
+            rpt.SetDataSource(rptData);
+            rpt.DataDefinition.FormulaFields["mabaocao"].Text = "'" + comTimkiem.Text + "'";
+            Frmprv_QLDG f = new Frmprv_QLDG(rpt);
+            f.Show();
+
+        }
+
         private void NapCT()
         {
             i = grdData.CurrentRow.Index;

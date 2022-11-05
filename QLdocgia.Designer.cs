@@ -291,6 +291,7 @@ namespace QLTV
             this.btnPrint.TabIndex = 99;
             this.btnPrint.Text = "In báo cáo";
             this.btnPrint.UseVisualStyleBackColor = false;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // QLdocgia
             // 
