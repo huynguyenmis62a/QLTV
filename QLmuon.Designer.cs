@@ -47,6 +47,8 @@ namespace QLTV
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtNgayTra = new System.Windows.Forms.DateTimePicker();
+            this.txtNgayMuon = new System.Windows.Forms.DateTimePicker();
             this.txtHoTen = new System.Windows.Forms.TextBox();
             this.txtmadocgia = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -66,8 +68,6 @@ namespace QLTV
             this.comTimkiem2 = new System.Windows.Forms.ComboBox();
             this.comTimkiem1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtNgayTra = new System.Windows.Forms.DateTimePicker();
-            this.txtNgayMuon = new System.Windows.Forms.DateTimePicker();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -247,6 +247,22 @@ namespace QLTV
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin mượn";
             // 
+            // txtNgayTra
+            // 
+            this.txtNgayTra.Location = new System.Drawing.Point(102, 116);
+            this.txtNgayTra.Name = "txtNgayTra";
+            this.txtNgayTra.Size = new System.Drawing.Size(200, 22);
+            this.txtNgayTra.TabIndex = 89;
+            // 
+            // txtNgayMuon
+            // 
+            this.txtNgayMuon.Location = new System.Drawing.Point(102, 83);
+            this.txtNgayMuon.MaxDate = new System.DateTime(2025, 12, 25, 0, 0, 0, 0);
+            this.txtNgayMuon.MinDate = new System.DateTime(2008, 12, 31, 0, 0, 0, 0);
+            this.txtNgayMuon.Name = "txtNgayMuon";
+            this.txtNgayMuon.Size = new System.Drawing.Size(200, 22);
+            this.txtNgayMuon.TabIndex = 88;
+            // 
             // txtHoTen
             // 
             this.txtHoTen.Location = new System.Drawing.Point(102, 50);
@@ -341,6 +357,7 @@ namespace QLTV
             this.btnPrint.TabIndex = 64;
             this.btnPrint.Text = "In báo cáo";
             this.btnPrint.UseVisualStyleBackColor = false;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // btnLast
             // 
@@ -431,22 +448,6 @@ namespace QLTV
             this.label1.Size = new System.Drawing.Size(95, 16);
             this.label1.TabIndex = 79;
             this.label1.Text = "Tìm kiếm theo:";
-            // 
-            // txtNgayTra
-            // 
-            this.txtNgayTra.Location = new System.Drawing.Point(102, 116);
-            this.txtNgayTra.Name = "txtNgayTra";
-            this.txtNgayTra.Size = new System.Drawing.Size(200, 22);
-            this.txtNgayTra.TabIndex = 89;
-            // 
-            // txtNgayMuon
-            // 
-            this.txtNgayMuon.Location = new System.Drawing.Point(102, 83);
-            this.txtNgayMuon.MaxDate = new System.DateTime(2025, 12, 25, 0, 0, 0, 0);
-            this.txtNgayMuon.MinDate = new System.DateTime(2008, 12, 31, 0, 0, 0, 0);
-            this.txtNgayMuon.Name = "txtNgayMuon";
-            this.txtNgayMuon.Size = new System.Drawing.Size(200, 22);
-            this.txtNgayMuon.TabIndex = 88;
             // 
             // QLmuon
             // 

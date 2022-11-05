@@ -136,6 +136,25 @@ namespace QLTV
             this.Close();
         }
 
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            rptQLmuon rpt = new rptQLmuon();
+            DataTable rptData = new DataTable();
+           sql = "Select TableMuontrasach.masophieumuon, TableDocGia.madocgia, TableDocGia.HoTen, TableMuontrasach.NgayMuon," +
+                " TableSach.TenSach, TableSach.masach, TableMuontrasach.masach " +
+                " from (TableDocGia inner join TableMuonTrasach on TableDocGia.madocgia= TableMuonTrasach.madocgia )" +
+                " inner join TableSach on TableSach.masach= TableMuonTrasach.masach where" +
+           // sql = "Select masophieumuon, madocgia, NgayMuon From TableMuonTraSach where " +
+                " masophieumuon = '" + comTimkiem1.Text + "'";
+            da = new SqlDataAdapter(sql, conn); 
+            da.Fill(rptData);
+            rpt.SetDataSource(rptData);
+            rpt.DataDefinition.FormulaFields["baocaoso"].Text = "'" + comTimkiem1.Text + "'";
+            frmprv_QLmuon f = new frmprv_QLmuon(rpt);
+            f.Show();
+
+        }
+
         private void QLmuon_Load(object sender, EventArgs e)
         {
             constr = "Data Source=21AK22-COM\\LINH;Initial Catalog=QLTV;Integrated Security=True";

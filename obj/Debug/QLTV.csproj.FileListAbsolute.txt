@@ -99,3 +99,4 @@ E:\QLTV\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 E:\QLTV\bin\Debug\stdole.dll
 E:\QLTV\obj\Debug\QLTV.Frmprv_QLDG.resources
 E:\QLTV\obj\Debug\QLTV.csproj.CopyComplete
+E:\QLTV\obj\Debug\QLTV.frmprv_QLmuon.resources

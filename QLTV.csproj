@@ -76,6 +76,12 @@
     <Compile Include="Frmprv_QLDG.Designer.cs">
       <DependentUpon>Frmprv_QLDG.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmprv_QLmuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmprv_QLmuon.Designer.cs">
+      <DependentUpon>frmprv_QLmuon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frmqltv.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,12 @@
       <DependentUpon>RptQLDG.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="rptQLmuon.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptQLmuon.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="TimDocGia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +167,9 @@
     <EmbeddedResource Include="Frmprv_QLDG.resx">
       <DependentUpon>Frmprv_QLDG.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmprv_QLmuon.resx">
+      <DependentUpon>frmprv_QLmuon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frmqltv.resx">
       <DependentUpon>Frmqltv.cs</DependentUpon>
     </EmbeddedResource>
@@ -189,6 +204,10 @@
     <EmbeddedResource Include="RptQLDG.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>RptQLDG.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptQLmuon.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptQLmuon.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="TimDocGia.resx">
       <DependentUpon>TimDocGia.cs</DependentUpon>
