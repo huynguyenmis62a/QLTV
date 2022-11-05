@@ -91,5 +91,11 @@ namespace QLTV
         {
 
         }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            fromDocGia f = new fromDocGia();
+            f.Show();
+        }
     }
 }

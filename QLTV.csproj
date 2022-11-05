@@ -88,6 +88,12 @@
     <Compile Include="Frmqltv.Designer.cs">
       <DependentUpon>Frmqltv.cs</DependentUpon>
     </Compile>
+    <Compile Include="fromDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fromDocGia.Designer.cs">
+      <DependentUpon>fromDocGia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Muonsach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frmqltv.resx">
       <DependentUpon>Frmqltv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fromDocGia.resx">
+      <DependentUpon>fromDocGia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Luutrusach.resx">
       <DependentUpon>Luutrusach.cs</DependentUpon>

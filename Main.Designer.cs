@@ -30,6 +30,7 @@ namespace QLTV
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.hệThốngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngNhậpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -84,6 +85,7 @@ namespace QLTV
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.đăngNhậpLạiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -380,7 +382,7 @@ namespace QLTV
             this.toolStripSeparator8,
             this.hướngDẫnSửDụngToolStripMenuItem});
             this.trợGiúpToolStripMenuItem.Name = "trợGiúpToolStripMenuItem";
-            this.trợGiúpToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.trợGiúpToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
             this.trợGiúpToolStripMenuItem.Text = "&Trợ giúp";
             // 
             // giớiThiệuToolStripMenuItem
@@ -405,13 +407,13 @@ namespace QLTV
             this.tìmKiếmToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tìmKiếmĐộcGiảToolStripMenuItem});
             this.tìmKiếmToolStripMenuItem.Name = "tìmKiếmToolStripMenuItem";
-            this.tìmKiếmToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
+            this.tìmKiếmToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.tìmKiếmToolStripMenuItem.Text = "Tìm kiếm";
             // 
             // tìmKiếmĐộcGiảToolStripMenuItem
             // 
             this.tìmKiếmĐộcGiảToolStripMenuItem.Name = "tìmKiếmĐộcGiảToolStripMenuItem";
-            this.tìmKiếmĐộcGiảToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.tìmKiếmĐộcGiảToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.tìmKiếmĐộcGiảToolStripMenuItem.Text = "Tìm kiếm độc giả";
             this.tìmKiếmĐộcGiảToolStripMenuItem.Click += new System.EventHandler(this.tìmKiếmĐộcGiảToolStripMenuItem_Click);
             // 
@@ -423,7 +425,8 @@ namespace QLTV
             this.toolStripButton1,
             this.toolStripButton2,
             this.toolStripSeparator14,
-            this.toolStripButton3});
+            this.toolStripButton3,
+            this.toolStripButton4});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(800, 47);
@@ -491,6 +494,16 @@ namespace QLTV
             // 
             this.toolStripSeparator12.Name = "toolStripSeparator12";
             this.toolStripSeparator12.Size = new System.Drawing.Size(144, 6);
+            // 
+            // toolStripButton4
+            // 
+            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
+            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.Size = new System.Drawing.Size(44, 44);
+            this.toolStripButton4.Text = "toolStripButton4";
+            this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
             // 
             // Main
             // 
@@ -568,5 +581,6 @@ namespace QLTV
         private System.Windows.Forms.ToolStripMenuItem quảnLýTrảToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tìmKiếmToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tìmKiếmĐộcGiảToolStripMenuItem;
+        private System.Windows.Forms.ToolStripButton toolStripButton4;
     }
 }
