@@ -53,6 +53,7 @@ namespace QLTV
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnClearFilter = new System.Windows.Forms.Button();
+            this.btnPrint = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grdData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -281,11 +282,22 @@ namespace QLTV
             this.btnClearFilter.UseVisualStyleBackColor = true;
             this.btnClearFilter.Click += new System.EventHandler(this.btnClearFilter_Click);
             // 
+            // btnPrint
+            // 
+            this.btnPrint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnPrint.Location = new System.Drawing.Point(658, 451);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(104, 21);
+            this.btnPrint.TabIndex = 99;
+            this.btnPrint.Text = "In báo cáo";
+            this.btnPrint.UseVisualStyleBackColor = false;
+            // 
             // QLdocgia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(887, 483);
+            this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.btnClearFilter);
             this.Controls.Add(this.txtHoTen);
             this.Controls.Add(this.txtDonViCongTac);
@@ -345,5 +357,6 @@ namespace QLTV
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnClearFilter;
+        private System.Windows.Forms.Button btnPrint;
     }
 }

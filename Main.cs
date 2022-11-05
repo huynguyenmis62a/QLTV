@@ -80,5 +80,16 @@ namespace QLTV
             TimDocGia f = new TimDocGia();
             f.Show();
         }
+
+        private void quảnLýMượnTrảToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QLmuon f = new QLmuon();
+            f.Show();
+        }
+
+        private void quảnLýNhânViênToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
