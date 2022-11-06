@@ -94,12 +94,6 @@
     <Compile Include="fromDocGia.Designer.cs">
       <DependentUpon>fromDocGia.cs</DependentUpon>
     </Compile>
-    <Compile Include="Muonsach.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Muonsach.Designer.cs">
-      <DependentUpon>Muonsach.cs</DependentUpon>
-    </Compile>
     <Compile Include="PHIEUMUON.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,9 +187,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Muonsach.resx">
-      <DependentUpon>Muonsach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PHIEUMUON.resx">
       <DependentUpon>PHIEUMUON.cs</DependentUpon>
