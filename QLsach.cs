@@ -27,7 +27,8 @@ namespace QLTV
 
         private void FrmQLsach_Load(object sender, EventArgs e)
         {
-            constr = "Data Source=21AK22-COM\\LINH;Initial Catalog=QLTV;Integrated Security=True";
+            constr = @"Data Source=ADMIN\PKH;Initial Catalog=PTUD;Integrated Security=True";
+            //constr = "Data Source=21AK22-COM\\LINH;Initial Catalog=QLTV;Integrated Security=True";
             conn.ConnectionString = constr;
             conn.Open();
             sql = "SELECT masach, TenSach, TacGia, Soluong, NXB, TheLoai, NamXuatBan from TableSach order by masach";
@@ -178,21 +179,39 @@ namespace QLTV
             {
 
                 addnewflag = false;
-                sql = "insert into TableSach (masach, TenSach, TacGia, SoLuong, NXB, TheLoai, NamXuatBan)" +
-                    " Values ('" + txtmasach.Text + "','" + txtTenSach.Text + "',N'" + txtNXB.Text + "',N'" +
-                    txtNamXuatBan.Text + "','" + txtSoLuong.Text + ",'" + txtTacGia.Text + "',N'" + txtTheLoai.Text + "')";
-                cmd.Connection = conn;
-                cmd.CommandText = sql;
-                cmd.ExecuteNonQuery();
-                grdData.Rows[i].Cells["masach"].Value = txtmasach.Text;
-                grdData.Rows[i].Cells["TenSach"].Value = txtTenSach.Text;
-                grdData.Rows[i].Cells["NXB"].Value = txtNXB.Text;
-                grdData.Rows[i].Cells["NamXuatBan"].Value = txtNamXuatBan.Text;
-                grdData.Rows[i].Cells["SoLuong"].Value = txtSoLuong.Text;
-                grdData.Rows[i].Cells["TacGia"].Value = txtTacGia.Text;
-                grdData.Rows[i].Cells["TheLoai"].Value = txtTheLoai.Text;
-                grdData.Refresh();
+                conn.Close();
+                constr = @"Data Source=ADMIN\PKH;Initial Catalog=PTUD;Integrated Security=True";
+                //constr = "";
+                conn.ConnectionString = constr;
+                conn.Open();
+                cmd = new SqlCommand("select count(masach) from TableSach where masach = '" + txtmasach.Text + "'", conn);
+                cmd.ExecuteScalar();
+                int count = Convert.ToInt32(cmd.ExecuteScalar().ToString());
+                if (count > 0)
+                {
+                    MessageBox.Show("Mã đã tồn tại,hãy thay đổi! " +
+                "", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                    txtmasach.Focus();//chuyển con trỏ soạn thảo đến ô txtmanhom
 
+                }
+                else
+                {
+                    sql = "insert into TableSach (masach, TenSach, TacGia, SoLuong, NXB, TheLoai, NamXuatBan)" +
+                   " Values ('" + txtmasach.Text + "','" + txtTenSach.Text + "',N'" + txtNXB.Text + "',N'" +
+                   txtNamXuatBan.Text + "','" + txtSoLuong.Text + ",'" + txtTacGia.Text + "',N'" + txtTheLoai.Text + "')";
+                    cmd.Connection = conn;
+                    cmd.CommandText = sql;
+                    cmd.ExecuteNonQuery();
+                    grdData.Rows[i].Cells["masach"].Value = txtmasach.Text;
+                    grdData.Rows[i].Cells["TenSach"].Value = txtTenSach.Text;
+                    grdData.Rows[i].Cells["NXB"].Value = txtNXB.Text;
+                    grdData.Rows[i].Cells["NamXuatBan"].Value = txtNamXuatBan.Text;
+                    grdData.Rows[i].Cells["SoLuong"].Value = txtSoLuong.Text;
+                    grdData.Rows[i].Cells["TacGia"].Value = txtTacGia.Text;
+                    grdData.Rows[i].Cells["TheLoai"].Value = txtTheLoai.Text;
+                    grdData.Refresh();
+                }
+              
             }
             btnUpdate.Enabled = false;
         }

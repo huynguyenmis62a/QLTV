@@ -491,6 +491,7 @@ namespace QLTV
             this.groupBox5.Size = new System.Drawing.Size(1302, 56);
             this.groupBox5.TabIndex = 43;
             this.groupBox5.TabStop = false;
+            this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
             // 
             // btnMuon
             // 

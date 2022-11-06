@@ -30,12 +30,13 @@ namespace QLTV
 
         private void Muonsach_Load(object sender, EventArgs e)
         {
-            constr = "Data Source=21AK22-COM\\LINH;Initial Catalog=QLTV;Integrated Security=True";
+            constr = @"Data Source=ADMIN\PKH;Initial Catalog=PTUD;Integrated Security=True";
+            //constr = "Data Source=21AK22-COM\\LINH;Initial Catalog=QLTV;Integrated Security=True";
             conn.ConnectionString = constr;
             conn.Open();
             //sql = "SELECT masach,TenSach,TacGia,SoLuong,NXB,TheLoai,NamXuatBan FROM TableSach";
             
-            sql = "Select TableDocGia.madocgia,TableDocGia.HoTen, TableMuontrasach.masach," +
+            sql = "Select TableDocGia.madocgia,TableDocGia.HoTen, TableMuontrasach.masach,TableMuontrasach.masophieumuon," +
                 " TableSach.TenSach,TableSach.TacGia,TableSach.SoLuong,TableSach.NXB," +
                 "TableSach.TheLoai,TableSach.NamXuatBan " +
                 " from (TableDocGia inner join TableMuonTrasach on TableDocGia.madocgia= TableMuonTrasach.madocgia )" +
@@ -87,13 +88,13 @@ namespace QLTV
 
 
                 //Rỗng__độc giả mới
-                sql = "insert into TableDocGia (madocgia,HoTen)" +
-                   " Values ('" + txtmadocgia.Text + "',N'" + txtHoTen.Text + "')";
+               // sql = "insert into TableDocGia (madocgia,HoTen)" +
+                //  " Values ('" + txtmadocgia.Text + "',N'" + txtHoTen.Text + "')";
                 //MessageBox.Show("Hãy thêm độc giả mới!");
                 //txtmadocgia.Focus();//chuyen con trỏ soạn thảo đến ô mã nhóm
-                cmd.Connection = conn;
-                cmd.CommandText = sql;
-                cmd.ExecuteNonQuery();
+                //cmd.Connection = conn;
+               // cmd.CommandText = sql;
+                //cmd.ExecuteNonQuery();
                 sql = "Update TableSach Set SoLuong=SoLuong-1 WHERE masach='" + txtmasach.Text.Trim() + "';";
                 cmd.Connection = conn;
                 cmd.CommandText = sql;
@@ -180,6 +181,11 @@ namespace QLTV
         private void grdData1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             NapCT();
+        }
+
+        private void groupBox5_Enter(object sender, EventArgs e)
+        {
+
         }
 
         private void NapCT()

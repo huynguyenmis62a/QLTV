@@ -162,6 +162,7 @@ namespace QLTV
             this.groupBox1.TabIndex = 63;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Về Độc Giả";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // txtMaNhanVien
             // 

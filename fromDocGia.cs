@@ -316,6 +316,11 @@ namespace QLTV
 
         }
 
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
         private void Load_DS_DocGia_ListView(DataTable TableDocGia)
         {
             ListViewItem item;
