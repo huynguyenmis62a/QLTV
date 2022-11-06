@@ -132,7 +132,6 @@ D:\LTUD\New folder\obj\Debug\QLTV.Frmqltv.resources
 D:\LTUD\New folder\obj\Debug\QLTV.fromDocGia.resources
 D:\LTUD\New folder\obj\Debug\QLTV.Luutrusach.resources
 D:\LTUD\New folder\obj\Debug\QLTV.Main.resources
-D:\LTUD\New folder\obj\Debug\QLTV.Muonsach.resources
 D:\LTUD\New folder\obj\Debug\QLTV.Properties.Resources.resources
 D:\LTUD\New folder\obj\Debug\QLTV.QLdocgia.resources
 D:\LTUD\New folder\obj\Debug\QLTV.QLmuon.resources

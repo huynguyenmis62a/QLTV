@@ -141,12 +141,6 @@
     <Compile Include="TimDocGia.Designer.cs">
       <DependentUpon>TimDocGia.cs</DependentUpon>
     </Compile>
-    <Compile Include="Trasach.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Trasach.Designer.cs">
-      <DependentUpon>Trasach.cs</DependentUpon>
-    </Compile>
     <Compile Include="Luutrusach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +155,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Trasach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trasach.Designer.cs">
+      <DependentUpon>Trasach.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Dangnhap.resx">
       <DependentUpon>Dangnhap.cs</DependentUpon>
     </EmbeddedResource>
