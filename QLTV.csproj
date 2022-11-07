@@ -76,11 +76,11 @@
     <Compile Include="frmPrvPhieumuon.Designer.cs">
       <DependentUpon>frmPrvPhieumuon.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frmprv_QLDG.cs">
+    <Compile Include="FrmPrv_QLDG.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frmprv_QLDG.Designer.cs">
-      <DependentUpon>Frmprv_QLDG.cs</DependentUpon>
+    <Compile Include="FrmPrv_QLDG.Designer.cs">
+      <DependentUpon>FrmPrv_QLDG.cs</DependentUpon>
     </Compile>
     <Compile Include="frmprv_QLmuon.cs">
       <SubType>Form</SubType>
@@ -147,10 +147,10 @@
       <DependentUpon>rptPhieumuon.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="RptQLDG.cs">
+    <Compile Include="rptQLDG.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>RptQLDG.rpt</DependentUpon>
+      <DependentUpon>rptQLDG.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="rptQLmuon.cs">
@@ -197,8 +197,8 @@
     <EmbeddedResource Include="frmPrvPhieumuon.resx">
       <DependentUpon>frmPrvPhieumuon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frmprv_QLDG.resx">
-      <DependentUpon>Frmprv_QLDG.cs</DependentUpon>
+    <EmbeddedResource Include="FrmPrv_QLDG.resx">
+      <DependentUpon>FrmPrv_QLDG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmprv_QLmuon.resx">
       <DependentUpon>frmprv_QLmuon.cs</DependentUpon>
@@ -247,9 +247,9 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptPhieumuon.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="RptQLDG.rpt">
+    <EmbeddedResource Include="rptQLDG.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>RptQLDG.cs</LastGenOutput>
+      <LastGenOutput>rptQLDG.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="rptQLmuon.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

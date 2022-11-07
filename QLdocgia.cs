@@ -203,15 +203,15 @@ namespace QLTV
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
-            RptQLDG rpt = new RptQLDG();
+            rptQLDG rpt = new rptQLDG();
             DataTable rptData = new DataTable();
-            sql = "Select madocgia, HoTen, DonViCongTac, NgayLapThe From TableDocGia where " +
-                " madocgia = '" + comTimkiem.Text + "'";
+           sql = "Select madocgia, HoTen, DonViCongTac, NgayLapThe From TableDocGia where " +
+               " madocgia = '" + comTimkiem.Text + "'";
             da = new SqlDataAdapter(sql, conn); 
             da.Fill(rptData);
             rpt.SetDataSource(rptData);
-            rpt.DataDefinition.FormulaFields["mabaocao"].Text = "'" + comTimkiem.Text + "'";
-            Frmprv_QLDG f = new Frmprv_QLDG(rpt);
+            //rpt.DataDefinition.FormulaFields["mabaocao"].Text = "'" + comTimkiem.Text + "'";
+            FrmPrv_QLDG f = new FrmPrv_QLDG(rpt);
             f.Show();
 
         }

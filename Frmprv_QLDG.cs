@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QLTV
 {
-    public partial class Frmprv_QLDG : Form
+    public partial class FrmPrv_QLDG : Form
     {
-        public Frmprv_QLDG(RptQLDG rpt)
+        public FrmPrv_QLDG(rptQLDG rpt)
         {
             InitializeComponent();
             crystalReportViewer1.ReportSource = rpt;

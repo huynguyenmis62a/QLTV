@@ -16,14 +16,14 @@ namespace QLTV {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class RptQLDG : ReportClass {
+    public class rptQLDG : ReportClass {
         
-        public RptQLDG() {
+        public rptQLDG() {
         }
         
         public override string ResourceName {
             get {
-                return "RptQLDG.rpt";
+                return "rptQLDG.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace QLTV {
         
         public override string FullResourceName {
             get {
-                return "QLTV.RptQLDG.rpt";
+                return "QLTV.rptQLDG.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace QLTV {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedRptQLDG : Component, ICachedReport {
+    public class CachedrptQLDG : Component, ICachedReport {
         
-        public CachedRptQLDG() {
+        public CachedrptQLDG() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace QLTV {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            RptQLDG rpt = new RptQLDG();
+            rptQLDG rpt = new rptQLDG();
             rpt.Site = this.Site;
             return rpt;
         }
