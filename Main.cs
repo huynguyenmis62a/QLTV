@@ -97,5 +97,17 @@ namespace QLTV
             fromDocGia f = new fromDocGia();
             f.Show();
         }
+
+        private void giớiThiệuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Gioithieu f = new Gioithieu();
+            f.Show();
+         }
+
+        private void hướngDẫnSửDụngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HDSD f = new HDSD();
+            f.Show();
+        }
     }
 }

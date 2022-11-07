@@ -117,32 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>132, 17</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="toolStripButton4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIDSURBVDhPpZLrS5NhGMb3j4SWh0oRQVExD4gonkDpg4hG
-        YKxG6WBogkMZKgPNCEVJFBGdGETEvgwyO9DJE5syZw3PIlPEE9pgBCLZ5XvdMB8Ew8gXbl54nuf63dd9
-        0OGSnwCahxbPRNPAPMw9Xpg6ZmF46kZZ0xSKzJPIrhpDWsVnpBhGkKx3nAX8Pv7z1zg8OoY/cITdn4fw
-        bf/C0kYAN3Ma/w3gWfZL5kzTKBxjWyK2DftwI9tyMYCZKXbNHaD91bLYJrDXsYbrWfUKwJrPE9M2M1Oc
-        VzOOpHI7Jr376Hi9ogHqFIANO0/MmmmbmSmm9a8ze+I4MrNWAdjtoJgWcx+PSzg166yZZ8xM8XvXDix9
-        c4jIqFYAjoriBV9AhEPv1mH/sonogha0afbZMMZz+yreTGyhpusHwtNNCsA5U1zS4BLxzJIfg299qO32
-        Ir7UJtZfftyATqeT+8o2D8JSjQrAJblrncYL7ZJ2+bfaFnC/1S1NjL3diRat7qrO7wLRP3HjWsojBeCo
-        mDEo5mNjuweFGvjWg2EBhCbpkW78htSHHwRyNdmgAFzPEee2iFkzayy2OLXzT4gr6UdUnlXrullsxxQ+
-        kx0g8BTA3aZlButjSTyjODq/WcQcW/B/Je4OQhLvKQDnzN1mp0nnkvAhR8VuMzNrpm1mpjgkoVwB/v8D
-        TgDQASA1MVpwzwAAAABJRU5ErkJggg==
-</value>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value> Thư viện là nơi cung cấp tri thức thiết yếu, góp phần nâng cao chất lượng trong công việc, học tập và đời sống tinh thần. Chính vì vậy việc tin học hoá trong quản lý thư viện là thiết yếu, nó sẽ giúp việc quản lý trở nên đơn giản và có tính chính xác cao, truy vấn thông tin nhanh chóng,hiệu quả. 
+
+  Hệ thống quản lý thư viện HLH tích hợp nhiều chức năng như: Quản lý sách, Quản lý độc giả, Quản lý mượn trả sách, Lịch sử mượn trả, tra cứu tìm kiếm, Thống kê báo cáo... nhằm đơn giản hóa công tác quản lý thư viện. Sản phẩm được thiết kế đơn giản, tiện lợi và tiết kiệm thời gian cho nhân viên thư viện cũng như hỗ trợ cho công tác quản lý của ban lãnh đạo. Mỗi một phân hệ được thiết kế liên quan mật thiết như những mắt xích tạo nên tính chuyên nghiệp và khả năng tự động hóa cao.
+
+  Các chức năng chính của phần mềm:
+
+1. Quản lý sách
+2. Quản lý độc giả
+3. Quản lý mượn trả sách
+4. Báo cáo tổng hợp
+
+  Ưu điểm của phần mềm:
+• Đơn giản hoá công tác quản lý sách, quản lý độc giả, quản lý mượn trả, quản lý nhân viên, báo cáo tổng hợp sách ...
+• Là một giải pháp hữu hiệu để tiết kiệm thời gian, công sức, đồng thời nâng cao hiệu quả khoa học cho việc quản lý thư viện.
+• Giao diện đơn giản, thân thiện với người dùng.
+
+Cảm ơn bạn đã tin tưởng và lựa chọn Hệ thống quản lý thư viện HLH</value>
   </data>
-  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>237, 17</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>25</value>
-  </metadata>
 </root>

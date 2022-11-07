@@ -74,6 +74,7 @@ namespace QLTV
             // 
             // btnUpdate
             // 
+            this.btnUpdate.Enabled = false;
             this.btnUpdate.Location = new System.Drawing.Point(542, 457);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(58, 22);

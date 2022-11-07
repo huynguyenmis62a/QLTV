@@ -100,6 +100,18 @@
     <Compile Include="fromDocGia.Designer.cs">
       <DependentUpon>fromDocGia.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gioithieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gioithieu.Designer.cs">
+      <DependentUpon>Gioithieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HDSD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HDSD.Designer.cs">
+      <DependentUpon>HDSD.cs</DependentUpon>
+    </Compile>
     <Compile Include="PHIEUMUON.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,6 +208,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fromDocGia.resx">
       <DependentUpon>fromDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gioithieu.resx">
+      <DependentUpon>Gioithieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HDSD.resx">
+      <DependentUpon>HDSD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Luutrusach.resx">
       <DependentUpon>Luutrusach.cs</DependentUpon>
