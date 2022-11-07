@@ -90,6 +90,12 @@ namespace QLTV
             conn.Close();
         }
 
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            
+        }
+
         private void NapCT()
         {
             i = grdphieumuon.CurrentRow.Index;//Nhan gia tri chi so cua bản ghi hiện thời

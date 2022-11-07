@@ -46,17 +46,23 @@ namespace QLTV
         private void button1_Click(object sender, EventArgs e)
         {
             conn.Open();
-
-            sql = "insert into PHIEUMUON (MAPHIEUMUON,madocgia,manhanvien,masach,ngaylapphieu,ngaytra,soluong)" +
+            // if (Kiemtramasach() == 1 && KiemTraDaMuonSachChua() == 1)
+            // {
+            try { 
+                sql = "insert into PHIEUMUON (MAPHIEUMUON,madocgia,manhanvien,masach,ngaylapphieu,ngaytra,soluong)" +
                 " values ('" + txtMAPHIEUMUON.Text + "','" + txtmadg.Text + "','" + txtmaNV.Text + "','"+txtmaTL.Text+"','" + TXTNGAYLAP.Text + "','" + TXTNGAYTRA.Text + "','" + txtSL.Text + "')";
             cmd.Connection = conn;
             cmd.CommandText = sql;
             cmd.ExecuteNonQuery();
+            sql = "Update TableSach Set TableSach.SoLuong=TableSach.SoLuong-PHIEUMUON.soluong from TableSach, PHIEUMUON  WHERE PHIEUMUON.masach=TableSach.masach and TableSach.masach='" + txtmaTL.Text.Trim() + "';";
+            cmd.Connection = conn;//3 cau lenh lien quan den them sua xoa
+            cmd.CommandText = sql;//
+            cmd.ExecuteNonQuery();
             MessageBox.Show("Tạo phiếu mượn thành công!", " Thông báo ");
-            //Nạp dữ liệu vào ô luới
+                //Nạp dữ liệu vào ô luới
 
-
-           i = grdphieumuon.Rows.Count - 1;
+            
+            i = grdphieumuon.Rows.Count - 1;
             grdphieumuon.Rows[i].Cells["MAPHIEUMUON"].Value = txtMAPHIEUMUON.Text;
             grdphieumuon.Rows[i].Cells["madocgia"].Value = txtmadg.Text;
             grdphieumuon.Rows[i].Cells["manhanvien"].Value = txtmaNV.Text;
@@ -68,8 +74,19 @@ namespace QLTV
 
             grdphieumuon.Refresh();
             conn.Close();
+            }catch(Exception err)
+            {
+                MessageBox.Show(" Có lỗi thi hành :" + err.Message);
+            }
 
-           
+            // }
+            // else
+            //{
+
+            //     return;
+            //  }
+
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -100,6 +117,40 @@ namespace QLTV
             NapCT();
         }
 
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
+
+        private void btnIn_Click(object sender, EventArgs e)
+        {
+            rptPhieumuon rpt = new rptPhieumuon();
+            DataTable rptData = new DataTable();//Bảng mới để truyền chiếu dữ liệu vào đấy, lấy từ sql vào đây
+            //tạo câu Sql
+            sql = " Select m.masach,s.TenSach, m.soluong,m.madocgia,m.ngaylapphieu,m.ngaytra,m.manhanvien from PHIEUMUON m, TableSach s where m.masach=s.masach";
+               // "where " +
+
+                //"MAPHIEUMUON='" + txtMAPHIEUMUON.Text + "'";//bảng mẫu thiết kế như nào thì gọi ra đúng như vậy
+            // comGtri chính là chứa cái mã nhóm
+            da = new SqlDataAdapter(sql, conn);
+            rptData.Clear();
+            da.Fill(rptData);// Lấy dữ liệu và đổ vào rptData
+
+            //Gán
+            rpt.SetDataSource(rptData);
+            //chuyền dữ liệu từ ngooài vào
+           // rpt.DataDefinition.FormulaFields["MAPHIEUMUON"].Text//.Text= "'" + txtMAPHIEUMUON.Text + "'";
+            //rpt.DataDefinition.FormulaFields["HoTen"].Text = "'" + txttenDG.Text + "'";
+            //rpt.DataDefinition.FormulaFields["madocgia"].Text = "'" + txtmadg.Text + "'";
+            //rpt.DataDefinition.FormulaFields["manhanvien"].Text = "'" + txtmaNV.Text + "'";
+            //rpt.DataDefinition.FormulaFields["ngaylapphieu"].Text = "'" + TXTNGAYLAP.Text + "'";
+            //rpt.DataDefinition.FormulaFields["ngaytra"].Text = "'" + TXTNGAYTRA.Text + "'";
+            // giúp mình chuyền tên nhóm nằm ở comgtri vào formula field tennhom
+            frmPrvPhieumuon f = new frmPrvPhieumuon(rpt);
+            f.Show();
+        }
+
         private void txtmaNV_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmd = new SqlCommand("Select * from TableNhanVien Where manhanvien = @manhanvien", conn);
@@ -116,6 +167,9 @@ namespace QLTV
         }
 
         int i;
+
+        
+
         public PHIEUMUON()
         {
             InitializeComponent();
@@ -123,7 +177,9 @@ namespace QLTV
 
         private void PHIEUMUON_Load(object sender, EventArgs e)
         {
-            constr = @"Data Source=ADMIN\PKH;Initial Catalog=PTUD;Integrated Security=True";
+            try
+            {
+                constr = @"Data Source=ADMIN\PKH;Initial Catalog=PTUD;Integrated Security=True";
             conn.ConnectionString = constr;
             sql = "Select * from TableSach";
             cmd = new SqlCommand(sql, conn);
@@ -162,13 +218,72 @@ namespace QLTV
             da.Fill(dt);
             grdphieumuon.DataSource = dt;
 
-           
-           
+            }catch(Exception err)
+            {
+                MessageBox.Show(" Có lỗi thi hành :" + err.Message);
+            }
+        }
+
+        //thử nghiệm từ đây
+        /*
+         int Kiemtramasach()
+        {
+            sql = "SELECT masach,SoLuong From TableSach where masach='" + txtmaTL.Text + "'";
+            da = new SqlDataAdapter(sql, conn);
+            dt.Clear();
+            da.Fill(dt);     
+
+            if (dt.Rows[0][1].ToString() == "1")
+            {
+                MessageBox.Show("Xin lỗi ! Sách chỉ còn 1 cuốn nên không thể cho mượn");
+
+                return 0;
+            }
 
 
-
+            return 1;
 
         }
+        int KiemTraDaMuonSachChua()
+         {
+             sql = "SELECT m.masophieumuon,m.madocgia,d.HoTen as HoTenDocGia  ,s.masach,s.TenSach,m.manhanvien ," +
+                 "s.NXB  ,m.NgayMuon,m.NgayTra FROM TableMuonTraSach m,TableNhanVien n,TableSach s,TableDocGia d where m.madocgia = d.madocgia and m.manhanvien = n.manhanvien and m.masach = s.masach ";
+             da = new SqlDataAdapter(sql, conn);
+             dt.Clear();
+             da.Fill(dt);
+
+             string a = txtmadg.Text.ToString();
+             string TruyVan = "Select ChoPhepMuon from ThamSo";
+             da = new SqlDataAdapter(TruyVan, conn);
+             dt.Clear();
+             da.Fill(dt);
+
+
+             String x = (dt.Rows[0][2].ToString());
+             int chomuon = Int32.Parse(x);
+             int dem = 0;
+             for (int i = 0; i < dt.Rows.Count; i++)
+             {
+                 if ((dt.Rows[i][1].ToString()).Equals(a))
+                 {
+                     dem++;
+                 }
+             }
+             if (dem == chomuon)
+             {
+                 MessageBox.Show("Độc Giả này đã mượn quá quy định của thư viện");
+                 return 0;
+             }
+             else return 1;
+
+
+         }*/
+
+
+
+
+
+
 
         private void NapCT()
         {

@@ -28,7 +28,8 @@ namespace QLTV
 
         private void QLdocgia_Load(object sender, EventArgs e)
         {
-            constr = "Data Source=21AK22-COM\\LINH;Initial Catalog=QLTV;Integrated Security=True";
+            constr = @"Data Source=ADMIN\PKH;Initial Catalog=PTUD;Integrated Security=True";
+            //constr = "Data Source=21AK22-COM\\LINH;Initial Catalog=QLTV;Integrated Security=True";
             conn.ConnectionString = constr;
             conn.Open();
             sql = "SELECT madocgia, HoTen, DonViCongTac, NgayLapThe from TableDocGia order by madocgia";
@@ -186,7 +187,7 @@ namespace QLTV
             if (MessageBox.Show("Bạn có chắc chắn muốn xóa bản ghi hiện thời?Y/N", "Xác nhận" +
              "yêu cầu", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
-                sql = "Delete from TableDocGia wheremadocgia='" + txtmadocgia.Text + "'";
+                sql = "Delete from TableDocGia where madocgia='" + txtmadocgia.Text + "'";
                 cmd.Connection = conn;
                 cmd.CommandText = sql;
                 cmd.ExecuteNonQuery();

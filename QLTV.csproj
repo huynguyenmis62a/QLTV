@@ -70,6 +70,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPrvPhieumuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrvPhieumuon.Designer.cs">
+      <DependentUpon>frmPrvPhieumuon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frmprv_QLDG.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLTVDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="rptPhieumuon.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPhieumuon.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="RptQLDG.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -170,6 +182,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPrvPhieumuon.resx">
+      <DependentUpon>frmPrvPhieumuon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frmprv_QLDG.resx">
       <DependentUpon>Frmprv_QLDG.cs</DependentUpon>
     </EmbeddedResource>
@@ -209,6 +224,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QLsach.resx">
       <DependentUpon>QLsach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptPhieumuon.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPhieumuon.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="RptQLDG.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

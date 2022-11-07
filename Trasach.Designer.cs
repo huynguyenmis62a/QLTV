@@ -29,6 +29,7 @@ namespace QLTV
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Trasach));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
             this.ngaytra = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,6 +58,7 @@ namespace QLTV
             this.txttenDG = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtmadg = new System.Windows.Forms.ComboBox();
+            this.btnThoat = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdphieumuon)).BeginInit();
             this.SuspendLayout();
@@ -66,9 +68,9 @@ namespace QLTV
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Location = new System.Drawing.Point(-4, 1);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1272, 71);
             this.groupBox1.TabIndex = 40;
             this.groupBox1.TabStop = false;
@@ -138,7 +140,7 @@ namespace QLTV
             this.ngaylapphieu,
             this.ngaytra});
             this.grdphieumuon.Location = new System.Drawing.Point(26, 392);
-            this.grdphieumuon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grdphieumuon.Margin = new System.Windows.Forms.Padding(4);
             this.grdphieumuon.Name = "grdphieumuon";
             this.grdphieumuon.Size = new System.Drawing.Size(768, 225);
             this.grdphieumuon.TabIndex = 39;
@@ -157,7 +159,7 @@ namespace QLTV
             // txtMAPHIEUMUON
             // 
             this.txtMAPHIEUMUON.Location = new System.Drawing.Point(188, 95);
-            this.txtMAPHIEUMUON.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMAPHIEUMUON.Margin = new System.Windows.Forms.Padding(4);
             this.txtMAPHIEUMUON.Name = "txtMAPHIEUMUON";
             this.txtMAPHIEUMUON.Size = new System.Drawing.Size(433, 25);
             this.txtMAPHIEUMUON.TabIndex = 37;
@@ -175,7 +177,7 @@ namespace QLTV
             // txtSL
             // 
             this.txtSL.Location = new System.Drawing.Point(188, 278);
-            this.txtSL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSL.Margin = new System.Windows.Forms.Padding(4);
             this.txtSL.Name = "txtSL";
             this.txtSL.Size = new System.Drawing.Size(129, 25);
             this.txtSL.TabIndex = 35;
@@ -185,10 +187,10 @@ namespace QLTV
             this.bntlapphieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.bntlapphieu.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.bntlapphieu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bntlapphieu.Location = new System.Drawing.Point(741, 322);
-            this.bntlapphieu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bntlapphieu.Location = new System.Drawing.Point(726, 348);
+            this.bntlapphieu.Margin = new System.Windows.Forms.Padding(4);
             this.bntlapphieu.Name = "bntlapphieu";
-            this.bntlapphieu.Size = new System.Drawing.Size(126, 54);
+            this.bntlapphieu.Size = new System.Drawing.Size(92, 36);
             this.bntlapphieu.TabIndex = 34;
             this.bntlapphieu.Text = "Lưu";
             this.bntlapphieu.UseVisualStyleBackColor = false;
@@ -219,7 +221,7 @@ namespace QLTV
             this.TXTNGAYTRA.CustomFormat = "MM/dd/yyyy";
             this.TXTNGAYTRA.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.TXTNGAYTRA.Location = new System.Drawing.Point(188, 359);
-            this.TXTNGAYTRA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TXTNGAYTRA.Margin = new System.Windows.Forms.Padding(4);
             this.TXTNGAYTRA.Name = "TXTNGAYTRA";
             this.TXTNGAYTRA.Size = new System.Drawing.Size(188, 25);
             this.TXTNGAYTRA.TabIndex = 31;
@@ -229,7 +231,7 @@ namespace QLTV
             this.TXTNGAYLAP.CustomFormat = "MM/dd/yyyy";
             this.TXTNGAYLAP.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.TXTNGAYLAP.Location = new System.Drawing.Point(188, 316);
-            this.TXTNGAYLAP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TXTNGAYLAP.Margin = new System.Windows.Forms.Padding(4);
             this.TXTNGAYLAP.Name = "TXTNGAYLAP";
             this.TXTNGAYLAP.Size = new System.Drawing.Size(188, 25);
             this.TXTNGAYLAP.TabIndex = 30;
@@ -237,7 +239,7 @@ namespace QLTV
             // txttenNV
             // 
             this.txttenNV.Location = new System.Drawing.Point(349, 233);
-            this.txttenNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txttenNV.Margin = new System.Windows.Forms.Padding(4);
             this.txttenNV.Name = "txttenNV";
             this.txttenNV.Size = new System.Drawing.Size(272, 25);
             this.txttenNV.TabIndex = 29;
@@ -256,7 +258,7 @@ namespace QLTV
             // 
             this.txtmaNV.FormattingEnabled = true;
             this.txtmaNV.Location = new System.Drawing.Point(188, 233);
-            this.txtmaNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtmaNV.Margin = new System.Windows.Forms.Padding(4);
             this.txtmaNV.Name = "txtmaNV";
             this.txtmaNV.Size = new System.Drawing.Size(129, 25);
             this.txtmaNV.TabIndex = 27;
@@ -265,7 +267,7 @@ namespace QLTV
             // txttenTL
             // 
             this.txttenTL.Location = new System.Drawing.Point(349, 184);
-            this.txttenTL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txttenTL.Margin = new System.Windows.Forms.Padding(4);
             this.txttenTL.Name = "txttenTL";
             this.txttenTL.Size = new System.Drawing.Size(272, 25);
             this.txttenTL.TabIndex = 26;
@@ -284,7 +286,7 @@ namespace QLTV
             // 
             this.txtmaTL.FormattingEnabled = true;
             this.txtmaTL.Location = new System.Drawing.Point(188, 184);
-            this.txtmaTL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtmaTL.Margin = new System.Windows.Forms.Padding(4);
             this.txtmaTL.Name = "txtmaTL";
             this.txtmaTL.Size = new System.Drawing.Size(129, 25);
             this.txtmaTL.TabIndex = 24;
@@ -293,7 +295,7 @@ namespace QLTV
             // txttenDG
             // 
             this.txttenDG.Location = new System.Drawing.Point(349, 138);
-            this.txttenDG.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txttenDG.Margin = new System.Windows.Forms.Padding(4);
             this.txttenDG.Name = "txttenDG";
             this.txttenDG.Size = new System.Drawing.Size(272, 25);
             this.txttenDG.TabIndex = 23;
@@ -312,17 +314,31 @@ namespace QLTV
             // 
             this.txtmadg.FormattingEnabled = true;
             this.txtmadg.Location = new System.Drawing.Point(188, 138);
-            this.txtmadg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtmadg.Margin = new System.Windows.Forms.Padding(4);
             this.txtmadg.Name = "txtmadg";
             this.txtmadg.Size = new System.Drawing.Size(129, 25);
             this.txtmadg.TabIndex = 21;
             this.txtmadg.SelectedIndexChanged += new System.EventHandler(this.txtmadg_SelectedIndexChanged);
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
+            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThoat.Location = new System.Drawing.Point(843, 348);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(92, 36);
+            this.btnThoat.TabIndex = 66;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // Trasach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(972, 749);
+            this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grdphieumuon);
             this.Controls.Add(this.label7);
@@ -344,7 +360,7 @@ namespace QLTV
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtmadg);
             this.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Trasach";
             this.Text = "Trasach";
             this.Load += new System.EventHandler(this.Trasach_Load);
@@ -386,5 +402,6 @@ namespace QLTV
         private System.Windows.Forms.TextBox txttenDG;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox txtmadg;
+        private System.Windows.Forms.Button btnThoat;
     }
 }

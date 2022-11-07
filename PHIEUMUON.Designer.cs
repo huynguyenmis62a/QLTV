@@ -29,6 +29,7 @@ namespace QLTV
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PHIEUMUON));
             this.txtmadg = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txttenDG = new System.Windows.Forms.TextBox();
@@ -57,6 +58,8 @@ namespace QLTV
             this.ngaytra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.btnIn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grdphieumuon)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -178,9 +181,9 @@ namespace QLTV
             this.bntlapphieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.bntlapphieu.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.bntlapphieu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bntlapphieu.Location = new System.Drawing.Point(630, 378);
+            this.bntlapphieu.Location = new System.Drawing.Point(534, 380);
             this.bntlapphieu.Name = "bntlapphieu";
-            this.bntlapphieu.Size = new System.Drawing.Size(125, 41);
+            this.bntlapphieu.Size = new System.Drawing.Size(92, 36);
             this.bntlapphieu.TabIndex = 13;
             this.bntlapphieu.Text = "Lưu";
             this.bntlapphieu.UseVisualStyleBackColor = false;
@@ -298,12 +301,42 @@ namespace QLTV
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             // 
+            // btnThoat
+            // 
+            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnThoat.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
+            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThoat.Location = new System.Drawing.Point(737, 380);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(92, 36);
+            this.btnThoat.TabIndex = 67;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            // 
+            // btnIn
+            // 
+            this.btnIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnIn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIn.Location = new System.Drawing.Point(632, 380);
+            this.btnIn.Name = "btnIn";
+            this.btnIn.Size = new System.Drawing.Size(92, 36);
+            this.btnIn.TabIndex = 68;
+            this.btnIn.Text = "In phiếu mượn";
+            this.btnIn.UseVisualStyleBackColor = false;
+            this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
+            // 
             // PHIEUMUON
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(951, 749);
+            this.Controls.Add(this.btnIn);
+            this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grdphieumuon);
             this.Controls.Add(this.label7);
@@ -366,5 +399,7 @@ namespace QLTV
         private System.Windows.Forms.DataGridViewTextBoxColumn ngaytra;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Button btnIn;
     }
 }
