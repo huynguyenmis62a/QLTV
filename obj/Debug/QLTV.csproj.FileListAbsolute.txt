@@ -69,7 +69,6 @@ E:\QLTV\obj\Debug\QLTV.FrmQLtra.resources
 E:\QLTV\obj\Debug\QLTV.Frmqltv.resources
 E:\QLTV\obj\Debug\QLTV.Luutrusach.resources
 E:\QLTV\obj\Debug\QLTV.Main.resources
-E:\QLTV\obj\Debug\QLTV.Muonsach.resources
 E:\QLTV\obj\Debug\QLTV.Properties.Resources.resources
 E:\QLTV\obj\Debug\QLTV.QLdocgia.resources
 E:\QLTV\obj\Debug\QLTV.QLmuon.resources
@@ -189,3 +188,8 @@ D:\LTUD\Nhom4_QLTV\obj\Debug\QLTV.csproj.CopyComplete
 D:\LTUD\Nhom4_QLTV\obj\Debug\QLTV.exe
 D:\LTUD\Nhom4_QLTV\obj\Debug\QLTV.pdb
 D:\LTUD\Nhom4_QLTV\obj\Debug\QLTV.frmPrvPhieumuon.resources
+E:\QLTV\obj\Debug\QLTV.frmPrvPhieumuon.resources
+E:\QLTV\obj\Debug\QLTV.fromDocGia.resources
+E:\QLTV\obj\Debug\QLTV.Gioithieu.resources
+E:\QLTV\obj\Debug\QLTV.HDSD.resources
+E:\QLTV\obj\Debug\QLTV.PHIEUMUON.resources

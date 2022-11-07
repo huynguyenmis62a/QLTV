@@ -28,8 +28,8 @@ namespace QLTV
 
         private void QLdocgia_Load(object sender, EventArgs e)
         {
-            constr = @"Data Source=ADMIN\PKH;Initial Catalog=PTUD;Integrated Security=True";
-            //constr = "Data Source=21AK22-COM\\LINH;Initial Catalog=QLTV;Integrated Security=True";
+            //constr = @"Data Source=ADMIN\PKH;Initial Catalog=PTUD;Integrated Security=True";
+            constr = "Data Source=21AK22-COM\\LINH;Initial Catalog=QLTV;Integrated Security=True";
             conn.ConnectionString = constr;
             conn.Open();
             sql = "SELECT madocgia, HoTen, DonViCongTac, NgayLapThe from TableDocGia order by madocgia";

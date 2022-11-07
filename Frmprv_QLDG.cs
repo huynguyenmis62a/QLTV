@@ -18,11 +18,6 @@ namespace QLTV
             crystalReportViewer1.ReportSource = rpt;
         }
 
-        private void Frmprv_QLDG_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void crystalReportViewer1_Load(object sender, EventArgs e)
         {
 

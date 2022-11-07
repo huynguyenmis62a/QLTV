@@ -54,7 +54,7 @@ namespace QLTV
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "Frmprv_QLDG";
             this.Text = "Frmprv_QLDG";
-            this.Load += new System.EventHandler(this.Frmprv_QLDG_Load);
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }
