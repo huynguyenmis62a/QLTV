@@ -150,7 +150,7 @@ namespace QLTV
             da.Fill(rptData);
             rpt.SetDataSource(rptData);
             rpt.DataDefinition.FormulaFields["baocaoso"].Text = "'" + comTimkiem1.Text + "'";
-            frmprv_QLmuon f = new frmprv_QLmuon(rpt);
+            frmPrvQLMuon f = new frmPrvQLMuon(rpt);
             f.Show();
 
         }

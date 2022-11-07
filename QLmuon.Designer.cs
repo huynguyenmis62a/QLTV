@@ -68,6 +68,8 @@ namespace QLTV
             this.comTimkiem2 = new System.Windows.Forms.ComboBox();
             this.comTimkiem1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtmasophieumuon = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -231,6 +233,8 @@ namespace QLTV
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label14);
+            this.groupBox2.Controls.Add(this.txtmasophieumuon);
             this.groupBox2.Controls.Add(this.txtNgayTra);
             this.groupBox2.Controls.Add(this.txtNgayMuon);
             this.groupBox2.Controls.Add(this.txtHoTen);
@@ -240,23 +244,23 @@ namespace QLTV
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(748, 19);
+            this.groupBox2.Location = new System.Drawing.Point(748, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(343, 162);
+            this.groupBox2.Size = new System.Drawing.Size(343, 179);
             this.groupBox2.TabIndex = 86;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin mượn";
             // 
             // txtNgayTra
             // 
-            this.txtNgayTra.Location = new System.Drawing.Point(102, 116);
+            this.txtNgayTra.Location = new System.Drawing.Point(127, 119);
             this.txtNgayTra.Name = "txtNgayTra";
             this.txtNgayTra.Size = new System.Drawing.Size(200, 22);
             this.txtNgayTra.TabIndex = 89;
             // 
             // txtNgayMuon
             // 
-            this.txtNgayMuon.Location = new System.Drawing.Point(102, 83);
+            this.txtNgayMuon.Location = new System.Drawing.Point(127, 86);
             this.txtNgayMuon.MaxDate = new System.DateTime(2025, 12, 25, 0, 0, 0, 0);
             this.txtNgayMuon.MinDate = new System.DateTime(2008, 12, 31, 0, 0, 0, 0);
             this.txtNgayMuon.Name = "txtNgayMuon";
@@ -265,14 +269,14 @@ namespace QLTV
             // 
             // txtHoTen
             // 
-            this.txtHoTen.Location = new System.Drawing.Point(102, 50);
+            this.txtHoTen.Location = new System.Drawing.Point(127, 53);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(200, 22);
             this.txtHoTen.TabIndex = 5;
             // 
             // txtmadocgia
             // 
-            this.txtmadocgia.Location = new System.Drawing.Point(102, 21);
+            this.txtmadocgia.Location = new System.Drawing.Point(127, 24);
             this.txtmadocgia.Name = "txtmadocgia";
             this.txtmadocgia.Size = new System.Drawing.Size(200, 22);
             this.txtmadocgia.TabIndex = 4;
@@ -449,6 +453,22 @@ namespace QLTV
             this.label1.TabIndex = 79;
             this.label1.Text = "Tìm kiếm theo:";
             // 
+            // txtmasophieumuon
+            // 
+            this.txtmasophieumuon.Location = new System.Drawing.Point(127, 147);
+            this.txtmasophieumuon.Name = "txtmasophieumuon";
+            this.txtmasophieumuon.Size = new System.Drawing.Size(200, 22);
+            this.txtmasophieumuon.TabIndex = 90;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(7, 147);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(99, 16);
+            this.label14.TabIndex = 91;
+            this.label14.Text = "Mã phiếu mượn";
+            // 
             // QLmuon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -518,5 +538,7 @@ namespace QLTV
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker txtNgayTra;
         private System.Windows.Forms.DateTimePicker txtNgayMuon;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txtmasophieumuon;
     }
 }

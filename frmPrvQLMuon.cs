@@ -10,15 +10,15 @@ using System.Windows.Forms;
 
 namespace QLTV
 {
-    public partial class frmprv_QLmuon : Form
+    public partial class frmPrvQLMuon : Form
     {
-        public frmprv_QLmuon(rptQLmuon rpt)
+        public frmPrvQLMuon(rptQLmuon rpt)
         {
             InitializeComponent();
-            crystalReportViewer1.ReportSource = rpt;
+            crystalReportViewer2.ReportSource = rpt;
         }
 
-        private void crystalReportViewer1_Load(object sender, EventArgs e)
+        private void crystalReportViewer2_Load(object sender, EventArgs e)
         {
 
         }

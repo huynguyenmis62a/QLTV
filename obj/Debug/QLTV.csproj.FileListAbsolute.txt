@@ -98,7 +98,6 @@ E:\QLTV\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 E:\QLTV\bin\Debug\stdole.dll
 E:\QLTV\obj\Debug\QLTV.Frmprv_QLDG.resources
 E:\QLTV\obj\Debug\QLTV.csproj.CopyComplete
-E:\QLTV\obj\Debug\QLTV.frmprv_QLmuon.resources
 D:\LTUD\New folder\bin\Debug\QLTV.exe.config
 D:\LTUD\New folder\bin\Debug\QLTV.exe
 D:\LTUD\New folder\bin\Debug\QLTV.pdb
@@ -193,3 +192,4 @@ E:\QLTV\obj\Debug\QLTV.fromDocGia.resources
 E:\QLTV\obj\Debug\QLTV.Gioithieu.resources
 E:\QLTV\obj\Debug\QLTV.HDSD.resources
 E:\QLTV\obj\Debug\QLTV.PHIEUMUON.resources
+E:\QLTV\obj\Debug\QLTV.frmPrvQLMuon.resources
