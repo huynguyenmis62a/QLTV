@@ -67,8 +67,6 @@ namespace QLTV
             this.toolStripSeparator17 = new System.Windows.Forms.ToolStripSeparator();
             this.quảnLýTrảToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.báoCáoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.báoCáoLiệuKêToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.báoCáoTổngHợpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trợGiúpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.giớiThiệuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -355,29 +353,17 @@ namespace QLTV
             // báoCáoToolStripMenuItem
             // 
             this.báoCáoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.báoCáoLiệuKêToolStripMenuItem,
-            this.toolStripSeparator7,
             this.báoCáoTổngHợpToolStripMenuItem});
             this.báoCáoToolStripMenuItem.Name = "báoCáoToolStripMenuItem";
             this.báoCáoToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.báoCáoToolStripMenuItem.Text = "&Báo cáo";
             // 
-            // báoCáoLiệuKêToolStripMenuItem
-            // 
-            this.báoCáoLiệuKêToolStripMenuItem.Name = "báoCáoLiệuKêToolStripMenuItem";
-            this.báoCáoLiệuKêToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.báoCáoLiệuKêToolStripMenuItem.Text = "1. Báo cáo liệt kê";
-            // 
-            // toolStripSeparator7
-            // 
-            this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(177, 6);
-            // 
             // báoCáoTổngHợpToolStripMenuItem
             // 
             this.báoCáoTổngHợpToolStripMenuItem.Name = "báoCáoTổngHợpToolStripMenuItem";
-            this.báoCáoTổngHợpToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.báoCáoTổngHợpToolStripMenuItem.Text = "2. Báo cáo tổng hợp";
+            this.báoCáoTổngHợpToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.báoCáoTổngHợpToolStripMenuItem.Text = "Báo cáo tổng hợp sách";
+            this.báoCáoTổngHợpToolStripMenuItem.Click += new System.EventHandler(this.báoCáoTổngHợpToolStripMenuItem_Click);
             // 
             // trợGiúpToolStripMenuItem
             // 
@@ -516,7 +502,7 @@ namespace QLTV
             // 
             this.pictureBox1.Image = global::QLTV.Properties.Resources._1_1200x800;
             this.pictureBox1.Location = new System.Drawing.Point(0, 63);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(800, 386);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -577,8 +563,6 @@ namespace QLTV
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator11;
         private System.Windows.Forms.ToolStripMenuItem quảnLýNhânViênToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem báoCáoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem báoCáoLiệuKêToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
         private System.Windows.Forms.ToolStripMenuItem báoCáoTổngHợpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem trợGiúpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem giớiThiệuToolStripMenuItem;

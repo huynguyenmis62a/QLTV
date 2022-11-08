@@ -109,5 +109,10 @@ namespace QLTV
             HDSD f = new HDSD();
             f.Show();
         }
+
+        private void báoCáoTổngHợpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
