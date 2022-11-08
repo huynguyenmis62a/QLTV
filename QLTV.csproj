@@ -88,12 +88,6 @@
     <Compile Include="FrmPrv_QLDG.Designer.cs">
       <DependentUpon>FrmPrv_QLDG.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frmqltv.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frmqltv.Designer.cs">
-      <DependentUpon>Frmqltv.cs</DependentUpon>
-    </Compile>
     <Compile Include="fromDocGia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +123,12 @@
     </Compile>
     <Compile Include="QLmuon.Designer.cs">
       <DependentUpon>QLmuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLNV.Designer.cs">
+      <DependentUpon>QLNV.cs</DependentUpon>
     </Compile>
     <Compile Include="QLsach.cs">
       <SubType>Form</SubType>
@@ -209,9 +209,6 @@
     <EmbeddedResource Include="FrmPrv_QLDG.resx">
       <DependentUpon>FrmPrv_QLDG.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frmqltv.resx">
-      <DependentUpon>Frmqltv.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="fromDocGia.resx">
       <DependentUpon>fromDocGia.cs</DependentUpon>
     </EmbeddedResource>
@@ -245,6 +242,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QLmuon.resx">
       <DependentUpon>QLmuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLNV.resx">
+      <DependentUpon>QLNV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QLsach.resx">
       <DependentUpon>QLsach.cs</DependentUpon>

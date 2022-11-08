@@ -193,3 +193,28 @@ E:\QLTV\obj\Debug\QLTV.Gioithieu.resources
 E:\QLTV\obj\Debug\QLTV.HDSD.resources
 E:\QLTV\obj\Debug\QLTV.PHIEUMUON.resources
 E:\QLTV\obj\Debug\QLTV.frmPrvQLMuon.resources
+E:\phát triển ứng dụng\ptud12\obj\Debug\QLTV.csproj.AssemblyReference.cache
+E:\phát triển ứng dụng\ptud12\obj\Debug\QLTV.Dangnhap.resources
+E:\phát triển ứng dụng\ptud12\obj\Debug\QLTV.DoiMK.resources
+E:\phát triển ứng dụng\ptud12\obj\Debug\QLTV.FrmQLtra.resources
+E:\phát triển ứng dụng\ptud12\obj\Debug\QLTV.frmPrvPhieumuon.resources
+E:\phát triển ứng dụng\ptud12\obj\Debug\QLTV.frmPrvQLMuon.resources
+E:\phát triển ứng dụng\ptud12\obj\Debug\QLTV.FrmPrv_QLDG.resources
+E:\phát triển ứng dụng\ptud12\obj\Debug\QLTV.fromDocGia.resources
+E:\phát triển ứng dụng\ptud12\obj\Debug\QLTV.Gioithieu.resources
+E:\phát triển ứng dụng\ptud12\obj\Debug\QLTV.HDSD.resources
+E:\phát triển ứng dụng\ptud12\obj\Debug\QLTV.Luutrusach.resources
+E:\phát triển ứng dụng\ptud12\obj\Debug\QLTV.Main.resources
+E:\phát triển ứng dụng\ptud12\obj\Debug\QLTV.PHIEUMUON.resources
+E:\phát triển ứng dụng\ptud12\obj\Debug\QLTV.Properties.Resources.resources
+E:\phát triển ứng dụng\ptud12\obj\Debug\QLTV.QLdocgia.resources
+E:\phát triển ứng dụng\ptud12\obj\Debug\QLTV.QLmuon.resources
+E:\phát triển ứng dụng\ptud12\obj\Debug\QLTV.QLNV.resources
+E:\phát triển ứng dụng\ptud12\obj\Debug\QLTV.FrmQLsach.resources
+E:\phát triển ứng dụng\ptud12\obj\Debug\QLTV.THphieumuon.resources
+E:\phát triển ứng dụng\ptud12\obj\Debug\QLTV.TimDocGia.resources
+E:\phát triển ứng dụng\ptud12\obj\Debug\QLTV.Trasach.resources
+E:\phát triển ứng dụng\ptud12\obj\Debug\QLTV.csproj.GenerateResource.cache
+E:\phát triển ứng dụng\ptud12\obj\Debug\QLTV.csproj.CoreCompileInputs.cache
+E:\phát triển ứng dụng\ptud12\obj\Debug\QLTV.exe
+E:\phát triển ứng dụng\ptud12\obj\Debug\QLTV.pdb
