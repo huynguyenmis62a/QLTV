@@ -43,23 +43,22 @@ namespace QLTV
             this.TXTNGAYTRA = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.bntlapphieu = new System.Windows.Forms.Button();
             this.txtSL = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtMAPHIEUMUON = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.grdphieumuon = new System.Windows.Forms.DataGridView();
-            this.MAPHIEUMUON = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.madocgia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label8 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.btnThemvaLuu = new System.Windows.Forms.Button();
+            this.btnIn = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
             this.masach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.manhanvien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngaylapphieu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngaytra = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label8 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnThoat = new System.Windows.Forms.Button();
-            this.btnIn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grdphieumuon)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -176,25 +175,14 @@ namespace QLTV
             this.label5.TabIndex = 12;
             this.label5.Text = "Ngày trả ";
             // 
-            // bntlapphieu
-            // 
-            this.bntlapphieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.bntlapphieu.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.bntlapphieu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bntlapphieu.Location = new System.Drawing.Point(534, 380);
-            this.bntlapphieu.Name = "bntlapphieu";
-            this.bntlapphieu.Size = new System.Drawing.Size(92, 36);
-            this.bntlapphieu.TabIndex = 13;
-            this.bntlapphieu.Text = "Lưu";
-            this.bntlapphieu.UseVisualStyleBackColor = false;
-            this.bntlapphieu.Click += new System.EventHandler(this.button1_Click);
-            // 
             // txtSL
             // 
+            this.txtSL.Enabled = false;
             this.txtSL.Location = new System.Drawing.Point(144, 265);
             this.txtSL.Name = "txtSL";
             this.txtSL.Size = new System.Drawing.Size(98, 25);
             this.txtSL.TabIndex = 14;
+            this.txtSL.Text = "1";
             // 
             // label6
             // 
@@ -225,8 +213,6 @@ namespace QLTV
             // 
             this.grdphieumuon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdphieumuon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MAPHIEUMUON,
-            this.madocgia,
             this.masach,
             this.manhanvien,
             this.soluong,
@@ -239,17 +225,79 @@ namespace QLTV
             this.grdphieumuon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdphieumuon_CellClick);
             this.grdphieumuon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // MAPHIEUMUON
+            // label8
             // 
-            this.MAPHIEUMUON.DataPropertyName = "MAPHIEUMUON";
-            this.MAPHIEUMUON.HeaderText = "Mã phiếu mượn";
-            this.MAPHIEUMUON.Name = "MAPHIEUMUON";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(390, 20);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(154, 27);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "MƯỢN SÁCH";
             // 
-            // madocgia
+            // groupBox1
             // 
-            this.madocgia.DataPropertyName = "madocgia";
-            this.madocgia.HeaderText = "Mã độc giả";
-            this.madocgia.Name = "madocgia";
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Location = new System.Drawing.Point(0, 2);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(954, 54);
+            this.groupBox1.TabIndex = 20;
+            this.groupBox1.TabStop = false;
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnThoat.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
+            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThoat.Location = new System.Drawing.Point(757, 380);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(92, 36);
+            this.btnThoat.TabIndex = 67;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            // 
+            // btnThemvaLuu
+            // 
+            this.btnThemvaLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnThemvaLuu.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnThemvaLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThemvaLuu.Location = new System.Drawing.Point(539, 380);
+            this.btnThemvaLuu.Name = "btnThemvaLuu";
+            this.btnThemvaLuu.Size = new System.Drawing.Size(98, 36);
+            this.btnThemvaLuu.TabIndex = 72;
+            this.btnThemvaLuu.Text = "Làm mới";
+            this.btnThemvaLuu.UseVisualStyleBackColor = false;
+            this.btnThemvaLuu.Click += new System.EventHandler(this.btnThemvaLuu_Click);
+            // 
+            // btnIn
+            // 
+            this.btnIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnIn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIn.Location = new System.Drawing.Point(643, 380);
+            this.btnIn.Name = "btnIn";
+            this.btnIn.Size = new System.Drawing.Size(108, 36);
+            this.btnIn.TabIndex = 71;
+            this.btnIn.Text = "In phiếu mượn";
+            this.btnIn.UseVisualStyleBackColor = false;
+            this.btnIn.Click += new System.EventHandler(this.btnIn_Click_1);
+            // 
+            // btnThem
+            // 
+            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnThem.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThem.Location = new System.Drawing.Point(436, 380);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(97, 36);
+            this.btnThem.TabIndex = 70;
+            this.btnThem.Text = "Thêm tài liệu";
+            this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // masach
             // 
@@ -281,61 +329,15 @@ namespace QLTV
             this.ngaytra.HeaderText = "Ngày trả";
             this.ngaytra.Name = "ngaytra";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(390, 20);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(154, 27);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "MƯỢN SÁCH";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Location = new System.Drawing.Point(0, 2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(954, 54);
-            this.groupBox1.TabIndex = 20;
-            this.groupBox1.TabStop = false;
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnThoat.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
-            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThoat.Location = new System.Drawing.Point(737, 380);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(92, 36);
-            this.btnThoat.TabIndex = 67;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = false;
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
-            // 
-            // btnIn
-            // 
-            this.btnIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnIn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIn.Location = new System.Drawing.Point(632, 380);
-            this.btnIn.Name = "btnIn";
-            this.btnIn.Size = new System.Drawing.Size(92, 36);
-            this.btnIn.TabIndex = 68;
-            this.btnIn.Text = "In phiếu mượn";
-            this.btnIn.UseVisualStyleBackColor = false;
-            this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
-            // 
             // PHIEUMUON
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(951, 749);
+            this.Controls.Add(this.btnThemvaLuu);
             this.Controls.Add(this.btnIn);
+            this.Controls.Add(this.btnThem);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grdphieumuon);
@@ -343,7 +345,6 @@ namespace QLTV
             this.Controls.Add(this.txtMAPHIEUMUON);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtSL);
-            this.Controls.Add(this.bntlapphieu);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.TXTNGAYTRA);
@@ -384,22 +385,21 @@ namespace QLTV
         private System.Windows.Forms.DateTimePicker TXTNGAYTRA;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button bntlapphieu;
         private System.Windows.Forms.TextBox txtSL;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtMAPHIEUMUON;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView grdphieumuon;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MAPHIEUMUON;
-        private System.Windows.Forms.DataGridViewTextBoxColumn madocgia;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.DataGridViewTextBoxColumn masach;
         private System.Windows.Forms.DataGridViewTextBoxColumn manhanvien;
         private System.Windows.Forms.DataGridViewTextBoxColumn soluong;
         private System.Windows.Forms.DataGridViewTextBoxColumn ngaylapphieu;
         private System.Windows.Forms.DataGridViewTextBoxColumn ngaytra;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Button btnThemvaLuu;
         private System.Windows.Forms.Button btnIn;
+        private System.Windows.Forms.Button btnThem;
     }
 }

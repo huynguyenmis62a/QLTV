@@ -151,6 +151,96 @@ namespace QLTV
             f.Show();
         }
 
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            conn.Open();
+
+            sql = "insert into PHIEUMUON (MAPHIEUMUON,madocgia,manhanvien,masach,ngaylapphieu,ngaytra,soluong)" +
+                " values ('" + txtMAPHIEUMUON.Text + "','" + txtmadg.Text + "','" + txtmaNV.Text + "','" + txtmaTL.Text + "','" + TXTNGAYLAP.Text + "','" + TXTNGAYTRA.Text + "','" + txtSL.Text + "')";
+            cmd.Connection = conn;
+            cmd.CommandText = sql;
+            cmd.ExecuteNonQuery();
+            sql = "Update TableSach Set TableSach.SoLuong=TableSach.SoLuong-PHIEUMUON.soluong from TableSach, PHIEUMUON  WHERE PHIEUMUON.masach=TableSach.masach and TableSach.masach='" + txtmaTL.Text.Trim() + "';";
+            cmd.Connection = conn;//3 cau lenh lien quan den them sua xoa
+            cmd.CommandText = sql;//
+            cmd.ExecuteNonQuery();
+            //MessageBox.Show("Tạo phiếu mượn thành công!", " Thông báo ");
+            //Nạp dữ liệu vào ô luới
+            sql = " select masach,manhanvien,soluong,ngaylapphieu,ngaytra from PHIEUMUON where MAPHIEUMUON= '" + txtMAPHIEUMUON.Text + "'";
+            da = new SqlDataAdapter(sql, conn);
+            dt.Clear();
+            da.Fill(dt);
+            grdphieumuon.DataSource = dt;
+
+            grdphieumuon.Refresh();
+            txtmaTL.Text = txttenTL.Text = "";
+            grdphieumuon.CurrentCell = grdphieumuon[0, grdphieumuon.RowCount - 1];
+            txtmaTL.Focus();
+
+            conn.Close();
+        }
+
+        private void btnThemvaLuu_Click(object sender, EventArgs e)
+        {
+            // conn.Open();
+
+
+            txtMAPHIEUMUON.Text = txtmadg.Text = txtmaNV.Text = txttenDG.Text = txttenNV.Text = txtmaTL.Text = txttenTL.Text = TXTNGAYLAP.Text = TXTNGAYTRA.Text = "";
+
+            //DataTable dataTable = new DataTable();
+            //dataTable.Clear();
+            dt.Clear();
+            //da.Fill(dt);
+            grdphieumuon.DataSource = dt;
+            //while (grdphieumuon.Rows.Count>0)
+            //{
+            //  grdphieumuon.Rows.RemoveAt(0);
+            //}
+            //grdphieumuon.Rows.Clear();
+            //grdphieumuon.Refresh();
+            //MessageBox.Show("Tạo phiếu mượn thành công!", " Thông báo ");
+            //Nạp dữ liệu vào ô luới
+            /* sql = " select masach,manhanvien,soluong,ngaylapphieu,ngaytra from PHIEUMUON where MAPHIEUMUON= '" + txtMAPHIEUMUON.Text + "'";
+             da = new SqlDataAdapter(sql, conn);
+             dt.Clear();
+             da.Fill(dt);
+             grdphieumuon.DataSource = dt;
+
+             grdphieumuon.Refresh();
+             //txtmaTL.Text = txttenTL.Text = "";
+             //txtmaTL.Focus();
+
+             conn.Close();*/
+        }
+
+        private void btnIn_Click_1(object sender, EventArgs e)
+        {
+            rptPhieumuon rpt = new rptPhieumuon();
+            DataTable rptData = new DataTable();//Bảng mới để truyền chiếu dữ liệu vào đấy, lấy từ sql vào đây
+            //tạo câu Sql
+            sql = " Select * from PHIEUMUON, TableSach where PHIEUMUON.masach=TableSach.masach and MAPHIEUMUON = N'"
+
+
+                 + txtMAPHIEUMUON.Text + "'";
+
+            da = new SqlDataAdapter(sql, conn);
+            da.Fill(rptData);// Lấy dữ liệu và đổ vào rptData
+
+            //Gán
+            rpt.SetDataSource(rptData);
+
+
+            //Gán
+
+
+            //chuyền dữ liệu từ ngooài vào
+            //rpt.DataDefinition.FormulaFields["tennhom"].Text = "'" + comGiaTri.Text + "'";// giúp mình chuyền tên nhóm nằm ở comgtri vào formula field tennhom
+            frmPrvPhieumuon f = new frmPrvPhieumuon(rpt);
+            f.Show();
+
+            //MaPM=txt.MAPHIEUMUON.text;
+        }
+
         private void txtmaNV_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmd = new SqlCommand("Select * from TableNhanVien Where manhanvien = @manhanvien", conn);

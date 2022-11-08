@@ -36,7 +36,6 @@ namespace QLTV
             this.label13 = new System.Windows.Forms.Label();
             this.datetimeNgayLapThe = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtMaNhanVien = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.txtCMND = new System.Windows.Forms.TextBox();
@@ -54,7 +53,6 @@ namespace QLTV
             this.txtmadocgia = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -129,7 +127,6 @@ namespace QLTV
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtMaNhanVien);
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.txtCMND);
@@ -147,7 +144,6 @@ namespace QLTV
             this.groupBox1.Controls.Add(this.txtmadocgia);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
@@ -163,14 +159,6 @@ namespace QLTV
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Về Độc Giả";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // txtMaNhanVien
-            // 
-            this.txtMaNhanVien.Location = new System.Drawing.Point(185, 208);
-            this.txtMaNhanVien.Name = "txtMaNhanVien";
-            this.txtMaNhanVien.ReadOnly = true;
-            this.txtMaNhanVien.Size = new System.Drawing.Size(196, 22);
-            this.txtMaNhanVien.TabIndex = 30;
             // 
             // label12
             // 
@@ -214,9 +202,9 @@ namespace QLTV
             // 
             this.txtNgayLapThe.CustomFormat = "dd/mm/yyyy";
             this.txtNgayLapThe.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtNgayLapThe.Location = new System.Drawing.Point(509, 205);
+            this.txtNgayLapThe.Location = new System.Drawing.Point(139, 206);
             this.txtNgayLapThe.Name = "txtNgayLapThe";
-            this.txtNgayLapThe.Size = new System.Drawing.Size(231, 22);
+            this.txtNgayLapThe.Size = new System.Drawing.Size(251, 22);
             this.txtNgayLapThe.TabIndex = 22;
             // 
             // btnSave
@@ -254,21 +242,21 @@ namespace QLTV
             // 
             // txtHoKhau
             // 
-            this.txtHoKhau.Location = new System.Drawing.Point(185, 242);
+            this.txtHoKhau.Location = new System.Drawing.Point(139, 239);
             this.txtHoKhau.Name = "txtHoKhau";
-            this.txtHoKhau.Size = new System.Drawing.Size(422, 22);
+            this.txtHoKhau.Size = new System.Drawing.Size(251, 22);
             this.txtHoKhau.TabIndex = 18;
             // 
             // txtDonVi
             // 
             this.txtDonVi.Location = new System.Drawing.Point(139, 173);
             this.txtDonVi.Name = "txtDonVi";
-            this.txtDonVi.Size = new System.Drawing.Size(367, 22);
+            this.txtDonVi.Size = new System.Drawing.Size(251, 22);
             this.txtDonVi.TabIndex = 15;
             // 
             // txtDienThoai
             // 
-            this.txtDienThoai.Location = new System.Drawing.Point(509, 140);
+            this.txtDienThoai.Location = new System.Drawing.Point(509, 106);
             this.txtDienThoai.Name = "txtDienThoai";
             this.txtDienThoai.Size = new System.Drawing.Size(231, 22);
             this.txtDienThoai.TabIndex = 14;
@@ -284,7 +272,7 @@ namespace QLTV
             // 
             this.txtDiaChi.Location = new System.Drawing.Point(139, 103);
             this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(367, 22);
+            this.txtDiaChi.Size = new System.Drawing.Size(251, 22);
             this.txtDiaChi.TabIndex = 12;
             // 
             // txtHoten
@@ -304,7 +292,7 @@ namespace QLTV
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(17, 246);
+            this.label10.Location = new System.Drawing.Point(17, 244);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(123, 15);
             this.label10.TabIndex = 9;
@@ -313,20 +301,11 @@ namespace QLTV
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(392, 210);
+            this.label9.Location = new System.Drawing.Point(17, 213);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(85, 15);
             this.label9.TabIndex = 8;
             this.label9.Text = "Ngày Làm Thẻ";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(17, 210);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(130, 15);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Mã Nhân Viên Lập Thẻ";
             // 
             // label7
             // 
@@ -340,7 +319,7 @@ namespace QLTV
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(411, 142);
+            this.label6.Location = new System.Drawing.Point(418, 106);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(66, 15);
             this.label6.TabIndex = 5;
@@ -376,7 +355,7 @@ namespace QLTV
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(427, 36);
+            this.label2.Location = new System.Drawing.Point(420, 32);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 15);
             this.label2.TabIndex = 1;
@@ -505,6 +484,7 @@ namespace QLTV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1084, 582);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -538,7 +518,6 @@ namespace QLTV
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.DateTimePicker datetimeNgayLapThe;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtMaNhanVien;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtCMND;
@@ -556,7 +535,6 @@ namespace QLTV
         private System.Windows.Forms.TextBox txtmadocgia;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
