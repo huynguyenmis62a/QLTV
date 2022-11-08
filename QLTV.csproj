@@ -153,6 +153,12 @@
       <DependentUpon>rptQLDG.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="rptQLDG1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptQLDG.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="rptQLmuon.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -255,7 +261,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="rptQLDG.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>rptQLDG.cs</LastGenOutput>
+      <LastGenOutput>rptQLDG1.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="rptQLmuon.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
