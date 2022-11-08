@@ -97,7 +97,7 @@ namespace QLTV
                                                                   "','" + txtEmail.Text.Trim() +
                                                                   "','" + txtDienThoai.Text.Trim() +
                                                                   "',N'" + GioiTinh +
-                                                                  "','" + txtMaNhanVien.Text.Trim() +
+                                                                 
                                                                   "','" + NgayLapThe + "')";
                     da = new SqlDataAdapter(sql1, conn);
                     cmd.Connection = conn;
@@ -118,7 +118,7 @@ namespace QLTV
                                            "',Email='" + txtEmail.Text.Trim() +
                                            "',DienThoai='" + txtDienThoai.Text.Trim() +
                                            "',GioiTinh='" + GioiTinh +
-                                           "',manhanvien='" + txtMaNhanVien.Text.Trim() +
+                                         
                                            "',Ngaylapthe='" + NgayLapThe +
                                            "' WHERE madocgia='" + flag + "';";
                     da = new SqlDataAdapter(sql1, conn);
@@ -212,7 +212,7 @@ namespace QLTV
                     checkGioiTinh.Checked = true;
                 else checkGioiTinh.Checked = false;
 
-                txtMaNhanVien.Text = dt.Rows[0][10].ToString();
+               
 
                 txtNgayLapThe.Value = DateTime.Parse(dt.Rows[0][11].ToString());
 

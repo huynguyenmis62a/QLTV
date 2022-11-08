@@ -43,52 +43,7 @@ namespace QLTV
             conn.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            conn.Open();
-            // if (Kiemtramasach() == 1 && KiemTraDaMuonSachChua() == 1)
-            // {
-            try { 
-                sql = "insert into PHIEUMUON (MAPHIEUMUON,madocgia,manhanvien,masach,ngaylapphieu,ngaytra,soluong)" +
-                " values ('" + txtMAPHIEUMUON.Text + "','" + txtmadg.Text + "','" + txtmaNV.Text + "','"+txtmaTL.Text+"','" + TXTNGAYLAP.Text + "','" + TXTNGAYTRA.Text + "','" + txtSL.Text + "')";
-            cmd.Connection = conn;
-            cmd.CommandText = sql;
-            cmd.ExecuteNonQuery();
-            sql = "Update TableSach Set TableSach.SoLuong=TableSach.SoLuong-PHIEUMUON.soluong from TableSach, PHIEUMUON  WHERE PHIEUMUON.masach=TableSach.masach and TableSach.masach='" + txtmaTL.Text.Trim() + "';";
-            cmd.Connection = conn;//3 cau lenh lien quan den them sua xoa
-            cmd.CommandText = sql;//
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("Tạo phiếu mượn thành công!", " Thông báo ");
-                //Nạp dữ liệu vào ô luới
-
-            
-            i = grdphieumuon.Rows.Count - 1;
-            grdphieumuon.Rows[i].Cells["MAPHIEUMUON"].Value = txtMAPHIEUMUON.Text;
-            grdphieumuon.Rows[i].Cells["madocgia"].Value = txtmadg.Text;
-            grdphieumuon.Rows[i].Cells["manhanvien"].Value = txtmaNV.Text;
-            grdphieumuon.Rows[i].Cells["soluong"].Value = txtSL.Text;
-            
-             grdphieumuon.Rows[i].Cells["masach"].Value= txtmaTL.Text;
-             grdphieumuon.Rows[i].Cells["ngaylapphieu"].Value = TXTNGAYLAP.Text;
-           grdphieumuon.Rows[i].Cells["ngaytra"].Value  =    TXTNGAYTRA.Text;
-
-            grdphieumuon.Refresh();
-            conn.Close();
-            }catch(Exception err)
-            {
-                MessageBox.Show(" Có lỗi thi hành :" + err.Message);
-            }
-
-            // }
-            // else
-            //{
-
-            //     return;
-            //  }
-
-
-        }
-
+       
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -96,7 +51,7 @@ namespace QLTV
 
         private void txtmaTL_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
             cmd = new SqlCommand("Select * from TableSach Where masach = @masach", conn);
             cmd.Parameters.AddWithValue("@masach", txtmaTL.Text);
             conn.Open();
@@ -123,34 +78,7 @@ namespace QLTV
 
         }
 
-        private void btnIn_Click(object sender, EventArgs e)
-        {
-            rptPhieumuon rpt = new rptPhieumuon();
-            DataTable rptData = new DataTable();//Bảng mới để truyền chiếu dữ liệu vào đấy, lấy từ sql vào đây
-            //tạo câu Sql
-            sql = " Select m.masach,s.TenSach, m.soluong,m.madocgia,m.ngaylapphieu,m.ngaytra,m.manhanvien from PHIEUMUON m, TableSach s where m.masach=s.masach";
-               // "where " +
-
-                //"MAPHIEUMUON='" + txtMAPHIEUMUON.Text + "'";//bảng mẫu thiết kế như nào thì gọi ra đúng như vậy
-            // comGtri chính là chứa cái mã nhóm
-            da = new SqlDataAdapter(sql, conn);
-            rptData.Clear();
-            da.Fill(rptData);// Lấy dữ liệu và đổ vào rptData
-
-            //Gán
-            rpt.SetDataSource(rptData);
-            //chuyền dữ liệu từ ngooài vào
-           // rpt.DataDefinition.FormulaFields["MAPHIEUMUON"].Text//.Text= "'" + txtMAPHIEUMUON.Text + "'";
-            //rpt.DataDefinition.FormulaFields["HoTen"].Text = "'" + txttenDG.Text + "'";
-            //rpt.DataDefinition.FormulaFields["madocgia"].Text = "'" + txtmadg.Text + "'";
-            //rpt.DataDefinition.FormulaFields["manhanvien"].Text = "'" + txtmaNV.Text + "'";
-            //rpt.DataDefinition.FormulaFields["ngaylapphieu"].Text = "'" + TXTNGAYLAP.Text + "'";
-            //rpt.DataDefinition.FormulaFields["ngaytra"].Text = "'" + TXTNGAYTRA.Text + "'";
-            // giúp mình chuyền tên nhóm nằm ở comgtri vào formula field tennhom
-            frmPrvPhieumuon f = new frmPrvPhieumuon(rpt);
-            f.Show();
-        }
-
+       
         private void btnThem_Click(object sender, EventArgs e)
         {
             conn.Open();
@@ -215,6 +143,7 @@ namespace QLTV
 
         private void btnIn_Click_1(object sender, EventArgs e)
         {
+            try { 
             rptPhieumuon rpt = new rptPhieumuon();
             DataTable rptData = new DataTable();//Bảng mới để truyền chiếu dữ liệu vào đấy, lấy từ sql vào đây
             //tạo câu Sql
@@ -238,14 +167,17 @@ namespace QLTV
             frmPrvPhieumuon f = new frmPrvPhieumuon(rpt);
             f.Show();
 
-            //MaPM=txt.MAPHIEUMUON.text;
+                //MaPM=txt.MAPHIEUMUON.text;
+            }catch(Exception err)
+            { MessageBox.Show(" Có lỗi thi hành :" + err.Message);
+            }
         }
-
         private void txtmaNV_SelectedIndexChanged(object sender, EventArgs e)
         {
+            conn.Open();
             cmd = new SqlCommand("Select * from TableNhanVien Where manhanvien = @manhanvien", conn);
             cmd.Parameters.AddWithValue("@manhanvien", txtmaNV.Text);
-            conn.Open();
+            
             dr = cmd.ExecuteReader();
             while (dr.Read())
             {
@@ -299,14 +231,14 @@ namespace QLTV
                 txtmaNV.Items.Add(dr2["manhanvien"]);
             }
             conn.Close();
-
+                /*
             conn.Open();
             sql = "select * from PHIEUMUON";
             da = new SqlDataAdapter(sql, conn);
             dt.Clear();
             // DataSet DS = new System.Data.DataSet();
             da.Fill(dt);
-            grdphieumuon.DataSource = dt;
+            grdphieumuon.DataSource = dt;*/
 
             }catch(Exception err)
             {

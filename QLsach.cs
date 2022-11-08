@@ -117,7 +117,9 @@ namespace QLTV
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            sql = "select masach,TenSach,TacGia,SoLuong,NXB,TheLoai,NamXuatBan from TableSach order by masach";
+            try
+            {
+                sql = "select masach,TenSach,TacGia,SoLuong,NXB,TheLoai,NamXuatBan from TableSach order by masach";
             da = new SqlDataAdapter(sql, conn);
             dt.Clear();
             da.Fill(dt);
@@ -130,7 +132,12 @@ namespace QLTV
             txtmasach.Focus();
             addnewflag = true;
             btnUpdate.Enabled = true;
-        }
+            } 
+            
+            catch(Exception err)
+            { MessageBox.Show(" Có lỗi thi hành :" + err.Message);
+            }
+}
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
@@ -142,7 +149,7 @@ namespace QLTV
         private void btnDelete_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn có chắc chắn muốn xóa bản ghi hiện thời?Y/N", "Xác nhận" +
-              "yêu cầu", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes) ;
+              "yêu cầu", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
                 sql = "Delete from TableSach where masach='" + txtmasach.Text + "'";
                 cmd.Connection = conn;
@@ -154,9 +161,10 @@ namespace QLTV
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
-        {
-            if (addnewflag == false)
+        { try
             {
+                if (addnewflag == false)
+                {
 
                 for (i = 0; i < grdData.RowCount - 1; i++)
                 {
@@ -174,13 +182,13 @@ namespace QLTV
                     cmd.ExecuteNonQuery();
                 }
                 MessageBox.Show("Đã cập nhật thành công!", "Thông báo");
-            }
+                 }
             else
             {
 
                 addnewflag = false;
                 conn.Close();
-                constr = @"Data Source=ADMIN\PKH;Initial Catalog=PTUD;Integrated Security=True";
+                //constr = @"Data Source=ADMIN\PKH;Initial Catalog=PTUD;Integrated Security=True";
                 //constr = "";
                 conn.ConnectionString = constr;
                 conn.Open();
@@ -214,6 +222,11 @@ namespace QLTV
               
             }
             btnUpdate.Enabled = false;
+            }
+            
+            catch(Exception err)
+            { MessageBox.Show(" Có lỗi thi hành :" + err.Message);
+            }
         }
 
         private void btnEnd_Click(object sender, EventArgs e)
@@ -222,14 +235,19 @@ namespace QLTV
         }
 
         private void btnClearFilter_Click(object sender, EventArgs e)
-        {
-            sql = "select masach,TenSach,TacGia,SoLuong,NXB,TheLoai,NamXuatBan from TableSach";               
+        { try
+            {
+                sql = "select masach,TenSach,TacGia,SoLuong,NXB,TheLoai,NamXuatBan from TableSach";               
             da = new SqlDataAdapter(sql, conn);
             dt.Clear();
             da.Fill(dt);
             grdData.DataSource = dt;
             grdData.Refresh();
             NapCT();
+            } catch (Exception err)
+            {
+                MessageBox.Show(" Có lỗi thi hành :" + err.Message);
+            }
         }
 
         private void grdData_CellContentClick(object sender, DataGridViewCellEventArgs e)
